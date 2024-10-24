@@ -1,3 +1,9 @@
+:root{
+    --ColorHeader:#3277c5;
+    --ColorMenu:#004c70;
+    --ColorLetras: aliceblue;
+}
+
 body {
     margin: 0 auto;
 }
@@ -14,8 +20,11 @@ main {
     font-family: "Montserrat", serif;
 }
 
+.Slogan{
+    font-family: "Poppins", sans-serif;
+}
 .nav {
-    background-color: #3277c5;
+    background-color: var(--ColorHeader);
     display: flex;
     flex-direction: row;
     padding: 14px 20px;
@@ -45,12 +54,13 @@ main {
 .navLinks {
     position: fixed;
     width: 100%;
-    height: 43vh;
-    background-color: #2c3e50;
-    top: 7%;
+    height: 40vh;
+    background-color: var(--ColorMenu);
+    top: 6.9%;
     right: -115%;
     text-align: center;
-    transition: all .5s;
+    transition: .8s;
+
 }
 
 li {
@@ -61,7 +71,7 @@ li {
 
 .link {
     font-size: 20px;
-    color: aliceblue;
+    color: var(--ColorLetras);
 }
 
 .Hamburger-menu {
@@ -75,7 +85,7 @@ li {
 .title--nav {
     padding-top: 10px;
     font-size: 19px;
-    color: white;
+    color: var(--ColorLetras);
 
 }
 
@@ -86,8 +96,7 @@ li {
     padding-top: 1%;
 }
 
-.nav__logo__menu {
-
+.Icon--burger {
     width: 25px;
     height: 25px;
 }
@@ -179,7 +188,7 @@ li {
 }
 
 .page-footer {
-    background-color: #043f83;
+    background-color: var(--ColorMenu);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -196,11 +205,11 @@ li {
 }
 
 .enlace {
-    background-color: #0f6bd4a6;
+    background-color: var(--ColorHeader);
     padding: 2.5% 2.5%;
     border-radius: 8px;
     text-decoration: none;
-    color: white;
+    color: var(--ColorLetras);
     transition: all ease-in-out 400ms;
 }
 
@@ -224,13 +233,12 @@ li {
 }
 
 .footer-text {
-    color: aliceblue;
+    color: var(--ColorLetras);
     text-align: center;
 }
 
 .Icon {
     width: 20px;
-    height: 30px;
     transition: all ease-in-out 300ms;
 }
 
@@ -239,23 +247,23 @@ li {
 }
 
 .Icon--Facebook {
-    color: aliceblue;
+    color: var(--ColorLetras);
 }
 
 .Icon--Instagram {
-    color: aliceblue;
+    color: var(--ColorLetras);
 }
 
 .Icon--Email {
-    color: aliceblue;
+    color: var(--ColorLetras);
 }
 
 .image_text {
     text-align: center;
     position: absolute;
-    color: aliceblue;
+    color: var(--ColorLetras);
     backdrop-filter: blur(2px);
-    bottom: 78%;
+    bottom: 80%;
 
 }
 
@@ -271,11 +279,11 @@ li {
     background-color: #3277c5be;
 }
 
-@media (max-width: 1440px) and (min-width:990px) {
+@media (min-width:990px) {
 
     .link {
         text-decoration: none;
-        color: aliceblue;
+        color: var(--ColorLetras);
         font-size: 19px;
 
     }
@@ -293,7 +301,7 @@ li {
         align-items: center;
     }
 
-/*     .navLinks {
+    .navLinks {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -303,19 +311,11 @@ li {
         background-color: transparent;
         width: 60%;
         height: auto;
-        transition: none;
-        bottom: 0;
-    } */
+        margin-top: 38px;
+        margin-right: 7px;
+        transition:none;
+    } 
 
-    .navLinks{
-        position:;
-        width: 100%;
-        height: 43vh;
-        top: 7%;
-        right: -115%;
-        text-align: center;
-        transition: all .5s;
-    }
     li {
         margin: 0 13px;
     }
@@ -350,7 +350,7 @@ li {
         font-size: 23px;
     }
 
-    .nav__logo__menu {
+    .Icon--burger {
         display: none;
     }
 
