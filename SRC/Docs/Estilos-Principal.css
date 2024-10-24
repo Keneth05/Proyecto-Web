@@ -308,10 +308,9 @@ li {
     } */
 
     .navLinks{
-        position: fixed;
+        position:;
         width: 100%;
         height: 43vh;
-
         top: 7%;
         right: -115%;
         text-align: center;
