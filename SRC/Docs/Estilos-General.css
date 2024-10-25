@@ -23,6 +23,10 @@
     width: 70%;
 }
 
+.title {
+    margin-top: 16px;
+    font-size: 24px;
+}
 .navbar {
     height: 6vh;
     width: 100%;
@@ -71,7 +75,7 @@ li {
 }
 
 .nav__logo {
-    margin-right: 5%;
+    margin-right: 30px;
     width: 50px;
     height: 50px;
     padding-top: 1%;
@@ -81,15 +85,6 @@ li {
     cursor: pointer;
     width: 25px;
     height: 25px;
-}
-
-
-.img {
-    width: 100%;
-    border-radius: 0.5em;
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
 }
 
 .page-footer {
@@ -111,7 +106,6 @@ li {
 .conditions {
     width: 270px;
     display: flex;
-    justify-content: space-between;
     margin: 0%;
 }
 
@@ -218,10 +212,4 @@ body {
         display: none;
     }
     
-    .page-footer {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        left: 0;
-    }
 }
