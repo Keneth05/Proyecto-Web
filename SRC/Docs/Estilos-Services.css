@@ -40,8 +40,11 @@ main {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin: 0 4%;
+    margin: 0;
+    outline: 2px solid black;
+    background-color: #004c70;
+    color: aliceblue;
+
 }
 
 .Services {
@@ -57,11 +60,12 @@ main {
     height: 10%;
     margin: 3% 3% 5%;
     filter: invert(1);
+
 }
 
 .img {
-    width: 90%;
-    border-radius: 0.5rem;
+    width: 100%;
+
     transition: opacity 400ms;
 
 }
@@ -76,10 +80,10 @@ main {
     text-align: center;
     justify-content: center;
     align-items: center;
-    color: #fff;
     opacity: 0;
-    transition: opacity 400ms ease;
-    text-align: center;
+    transition: opacity 350ms ease;
+    text-align: start;
+    font-family: "Arima", system-ui;
 
 }
 
@@ -107,11 +111,9 @@ main {
 .individual-service {
     box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.164);
     border-radius: 1em;
-    padding: 1%;
     margin: 4% 2%;
-    background-color: #004c70;
-    color: aliceblue;
-    padding: 2% 0 5% 0;
+    padding: 0 0 5% 0;
+    overflow: hidden;
     position: relative;
 }
 
@@ -131,6 +133,7 @@ main {
 
 .ViewMore{
     padding: 2% 5%;
+    width: 35%;
     border-radius: 10px;
     background-color: aliceblue;
     transition: all ease-in-out 400ms;
@@ -143,8 +146,12 @@ main {
     padding-right: 8%;
     border-radius: 12px;
     cursor: pointer;
+    background-color: #004c70;
+    color: aliceblue;
 
 }
+
+
 
 @media (max-width:390px) {
 
