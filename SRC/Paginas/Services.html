@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..//Docs/Estilos-Services.css">
+    <link rel="stylesheet" href="../Docs/Estilos-General.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Servicios</title>
+</head>
+
+<body>
+    <header class="nav">
+        <nav class="navbar">
+            <div class="nav__things">
+                <img class="nav__logo" src="../Imagenes/Imagenes-Principal/processed_image_no_background.png"
+                    alt="Logo de la empresa Osos bike shop">
+                <h1 class="title--nav">Osos Bike Shop</h1>
+            </div>
+            <label for="Hamburger-menu" class="label-menu">
+                <img class="Icon Icon--burger" src="../Imagenes/Imagenes-Principal/bars-solid (1).svg"
+                    alt="Logo del menu para Mobiles">
+            </label>
+
+            <input type="checkbox" class="Hamburger-menu" id="Hamburger-menu">
+
+            <ul class="navLinks">
+                <li class="list"><a class="link" href="/SRC/Paginas/Principal.html">Principal</a></li>
+                <li class="list"><a class="link" href="/SRC/Paginas/Productos.html">Productos</a></li>
+                <li class="list"><a class="link" href="/SRC/Paginas/Services.html">Servicios</a></li>
+                <li class="list"><a class="link" href="#">Contáctanos</a></li>
+                <li class="list"><a class="link" href="#">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img class="Principal-Image" src="../Imagenes/Imagenes-Servicios/osos02 (1).png"
+            alt="Joven en bicicleta anaranjada">
+        <div class="image_text">
+            <p class="ServicesText">Nuestros Servicios</p>
+        </div>
+        <h1 class="FactoryServices">Servicios que Ofrecemos</h1>
+        <section class="Services">
+            <article class="individual-service individual-service--preventive-maintenance">
+                <div class="service-tittle">
+                    <img class="Icon-service" src="/SRC/Imagenes/Imagenes-Servicios/caja-de-herramientas.png"
+                        alt="icono caja herramientas simulando mantenimiento ">
+                    <div class="container-name">
+                        <h3 class="service-name service-name--preventive">Mantenimiento Preventivo</h3>
+                    </div>
+                </div>
+                <div class="img-information">
+                    <img src="/SRC/Imagenes/Imagenes-Servicios/mantenimiento-predictivo.jpg"
+                        alt="Imagen hombre realizando mantenimiento preventivo" class="img img--preventive">
+                    <div class="service-description service-description--preventive-maintenance">
+                        <p class="description descripcion--preventive-maintenance">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore a earum amet quam
+                            voluptates
+                        </p>
+                    </div>
+                </div>
+                <div class="service-tasks">
+                    <ul>
+                        <li class="tasks">Lorem ipsum dolor sit amet.</li>
+                        <li class="tasks">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="btn-container">
+                    <button onclick="toggleDescription(event)" class="ViewMore">Ver Más</button>
+                </div>
+            </article>
+
+            <article class="individual-service individual-service--corrective-maintenance">
+                <div class="service-tittle">
+                    <img class="Icon-service" src="/SRC/Imagenes/Imagenes-Servicios/instrumentos.png"
+                        alt="herramientas simulando mantenimiento ">
+                    <div class="container-name">
+                        <h3 class="service-name service-name--corrective">Mantenimiento Correctivo</h3>
+                    </div>
+                </div>
+                <div class="img-information">
+                    <img src="/SRC/Imagenes/Imagenes-Servicios/Mantenimiento-correctivo.png"
+                        alt="Imagen hombre realizando mantenimiento electrico" class="img img--corrective">
+                    <div class="service-description service-description--corrective-maintenance">
+                        <p class="description descripcion--corrective-maintenance">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore a earum amet quam
+                            voluptates
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-tasks">
+                    <ul>
+                        <li class="tasks">Lorem ipsum dolor sit amet.</li>
+                        <li class="tasks">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="btn-container">
+                    <button onclick="toggleDescription(event)" class="ViewMore">Ver Más</button>
+                </div>
+            </article>
+
+            <article class="individual-service individual-service--wash-and-fit">
+                <div class="service-tittle">
+                    <img class="Icon-service" src="/SRC/Imagenes/Imagenes-Servicios/vehiculo.png"
+                        alt="Icono de lavando Bicicleta">
+                    <div class="container-name">
+                        <h3 class="service-name service-name--wash-and-fit">Lavado y Ajuste</h3>
+                    </div>
+                </div>
+                <div class="img-information">
+                    <img src="/SRC/Imagenes/Imagenes-Servicios/LavadoyAjuste.jpg"
+                        alt="Empleado relizando reparaciones a bicicleta" class="img img--wash-and-fit">
+                    <div class="service-description service-description--wash-and-fit">
+                        <p class="description descripcion--wash-and-fit">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore a earum amet quam
+                            voluptates
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-tasks">
+                    <ul>
+                        <li class="tasks">Lorem ipsum dolor sit amet.</li>
+                        <li class="tasks">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="btn-container">
+                    <button onclick="toggleDescription(event)" class="ViewMore">Ver Más</button>
+                </div>
+            </article>
+
+            <article class="individual-service individual-service--spare-parts">
+                <div class="service-tittle">
+                    <img class="Icon-service" src="/SRC/Imagenes/Imagenes-Servicios/compra.png"
+                        alt="Icono de lavando Bicicleta">
+                    <div class="container-name">
+                        <h3 class="service-name service-name--spare-parts">Venta de Repuestos</h3>
+                    </div>
+                </div>
+                <div class="img-information">
+                    <img src="/SRC/Imagenes/Imagenes-Servicios/VentaRepuestos.jpg"
+                        alt="Imagen con muchas partes de una bicicleta" class="img img--spare-parts">
+                    <div class="service-description service-description--spare-parts">
+                        <p class="description descripcion--spare-parts">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore a earum amet quam
+                            voluptates
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-tasks">
+                    <ul>
+                        <li class="tasks">Lorem ipsum dolor sit amet.</li>
+                        <li class="tasks">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="btn-container">
+                    <button onclick="toggleDescription(event)" class="ViewMore">Ver Más</button>
+                </div>
+            </article>
+
+            <article class="individual-service individual-service--Accesories">
+                <div class="service-tittle">
+                    <img class="Icon-service" src="/SRC/Imagenes/Imagenes-Servicios/guantes.png"
+                        alt="Icono de lavando Bicicleta">
+                    <div class="container-name">
+                        <h3 class="service-name service-name--Accesories">Venta de Accesorios</h3>
+                    </div>
+                </div>
+                <div class="img-information">
+                    <img src="/SRC/Imagenes/Imagenes-Servicios/VentaAccesorios.jpg"
+                        alt="Imagen hombre realizando mantenimiento electrico" class="img img--Accesories">
+                    <div class="service-description service-description--Accesories">
+                        <p class="description descripcion--Accesories">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore a earum amet quam
+                            voluptates
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-tasks">
+                    <ul>
+                        <li class="tasks">Lorem ipsum dolor sit amet.</li>
+                        <li class="tasks">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="btn-container">
+                    <button onclick="toggleDescription(event)" class="ViewMore">Ver Más</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="page-footer__Icons">
+            <a class="Icon Icon--Facebook" href="https://www.facebook.com/share/ZbFzsdYR76BZMV1v/?mibextid=kFxxJD"
+                target="_blank"> <i class="fa-brands fa-square-facebook"></i></a>
+
+            <a class="Icon Icon--Instagram"
+                href="https://www.instagram.com/ososbikeshop?igsh=MTM0dXVjdTFoNnBuNA%3D%3D&utm_source=qr"
+                target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+
+            <a class="Icon Icon--Email" href="Mailto:Ososbikes@gmail.com" target="_blank"><i
+                    class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div class="footer-text copyright">
+            <p class="copyright">2024 Osos Bike Shop todos los derechos reservados</p>
+        </div>
+        <div class="footer-text conditions">
+            <p class="footer-text services">Terminos y servicios</p>
+            <p class="footer-text Privacity">Privacidad</p>
+        </div>
+    </footer>
+    <script src="/SRC/Docs/JavaScrip.js"></script>
+</body>
+
+</html>
