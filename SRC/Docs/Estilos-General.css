@@ -47,7 +47,7 @@
     transition: ease-in-out .3s;
 }
 
-li {
+.list {
     display: block;
     margin: 50px 0;
     line-height: 30px;
@@ -179,7 +179,7 @@ body {
         transition: none;
     }
 
-    li {
+    .list {
         margin: 0 13px;
     }
 
