@@ -28,3 +28,21 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuCheckbox = document.getElementById("Hamburger-menu");
+    const MenuDarkView = document.getElementById("MenuDarkView");
+
+    menuCheckbox.addEventListener("change", () => {
+        if (menuCheckbox.checked) {
+            MenuDarkView.classList.add("active");
+        } else {
+            MenuDarkView.classList.remove("active");
+        }
+    });
+
+    MenuDarkView.addEventListener("click", () => {
+        menuCheckbox.checked = false;
+        MenuDarkView.classList.remove("active");
+    });
+});

@@ -38,24 +38,44 @@
 
 .navLinks {
     position: fixed;
-    width: 55%;
+    width: 60%;
     height: 100vh;
-    background-color: #004c70d1;
-    top: 7.4%;
-    right: -115%;
+    background-color: #004c70e3;
+    top: 7%;
+    right: -113%;
     transition: ease-in-out .3s;
 }
 
 .list {
-    display: block;
+    display: flex;
     margin: 50px 0;
-    line-height: 30px;
+    line-height: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.nav-icon{
+    width: 25px;
+    height: 25px;
+    filter: invert(1);
+    margin-right: 15px;
+}
+
+.nav-icon_arrow{
+    width: 16px;
+    height: 16px;
+    filter: invert(1);
+    float: right;
+}
 .link {
     font-size: 20px;
     color: var(--ColorLetras);
     text-decoration: none;
+}
+.Link-container{
+    display: flex;
+    align-items: center;
+
 }
 
 .Hamburger-menu {
@@ -86,6 +106,7 @@
     width: 25px;
     height: 25px;
 }
+
 
 .page-footer {
     background-color: var(--ColorMenu);
@@ -138,6 +159,24 @@
 .Icon--Email {
     color: var(--ColorLetras);
 }
+
+.MenuDarkView {
+    position: fixed;                 
+    width: 100vw;                
+    height: 100vh;              
+    background-color: rgba(0, 0, 0, 0.822); 
+    z-index: 1;    
+    opacity: 0;
+    pointer-events: none;     
+    transition: opacity 0.3s ease;                   
+}
+
+.MenuDarkView.active {
+    opacity: 1;               /* Visible cuando se activa */
+    pointer-events: auto;     /* Permite hacer clic cuando está visible */
+}
+
+
 body {
     margin: 0 auto;
 }
@@ -148,7 +187,10 @@ body {
         text-decoration: none;
         color: var(--ColorLetras);
         font-size: 19px;
+    }
 
+    .nav-icon_arrow{
+        display: none;
     }
 
     .link:hover {
@@ -193,6 +235,10 @@ body {
         align-items: center;
     }
 
+    .nav-icon{
+        display: none;
+    }
+
     .image_text {
         font-size: 22px;
         bottom: 75%;
@@ -212,5 +258,7 @@ body {
     .Icon--burger {
         display: none;
     }
-    
+    .Icon-container{
+        display: none;
+    }
 }

@@ -27,7 +27,7 @@ main {
 }
 
 .info-page {
-    box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.164);
+    box-shadow: 0px 0px 15px 0px  #004c70;;
     border-radius: 1em;
     margin: 4% 2%;
     padding: 6% 5%;
@@ -126,6 +126,9 @@ main {
     margin-top: 55px;
 }
 
+
+
+
 @keyframes arrow{
     from{
         opacity: 0;
@@ -142,8 +145,8 @@ main {
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 1%;
-        margin-bottom: 3%;
+        gap: 2%;
+        margin: 3% 0%;
         max-width: 80%;
 
     }

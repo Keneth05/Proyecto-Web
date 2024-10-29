@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..//Docs/Estilos-Services.css">
     <link rel="stylesheet" href="../Docs/Estilos-General.css">
+    <link rel="stylesheet" href="..//Docs/Estilos-Services.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link
@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>Servicios</title>
 </head>
+<div class="MenuDarkView" id="MenuDarkView"></div>
 
 <body>
     <header class="nav">
@@ -34,14 +35,59 @@
             <input type="checkbox" class="Hamburger-menu" id="Hamburger-menu">
 
             <ul class="navLinks">
-                <li class="list"><a class="link" href="/SRC/Paginas/Principal.html">Principal</a></li>
-                <li class="list"><a class="link" href="/SRC/Paginas/Productos.html">Productos</a></li>
-                <li class="list"><a class="link" href="/SRC/Paginas/Services.html">Servicios</a></li>
-                <li class="list"><a class="link" href="/SRC/Paginas/ContactUs.html">Contáctanos</a></li>
-                <li class="list"><a class="link" href="#">Nosotros</a></li>
+                <li class="list">
+
+                    <div class="Link-container">
+                        <img class="nav-icon" src="/SRC/Imagenes/Imagenes-Principal/hogar.png"
+                        alt="Icono simulando una casa para la pagina principal">
+                        <a class="link" href="/SRC/Paginas/Principal.html">Principal</a>
+                    </div>
+                    <img class="nav-icon_arrow" src="/SRC/Imagenes/Imagenes-Principal/flecha-correcta.png" alt="">
+                </li>
+
+                <li class="list">
+                    
+                    <div class="Link-container">
+                        <img class="nav-icon" src="/SRC/Imagenes/Imagenes-Principal/carrito-de-compras.png"
+                        alt="Icono simulando un carrito de compra para la pagina de productos">
+                        <a class="link" href="/SRC/Paginas/Productos.html">Productos</a>
+                    </div>
+                    <img class="nav-icon_arrow" src="/SRC/Imagenes/Imagenes-Principal/flecha-correcta.png" alt="">
+                </li>
+
+                <li class="list">
+                    
+                    <div class="Link-container">
+                        <img class="nav-icon" src="/SRC/Imagenes/Imagenes-Principal/llave.png"
+                        alt="Icono simulando una llave de herramienta para la pagina de servicios">
+                        <a class="link" href="/SRC/Paginas/Services.html">Servicios</a>
+                    </div>
+                    <img class="nav-icon_arrow" src="/SRC/Imagenes/Imagenes-Principal/flecha-correcta.png" alt="">
+                </li>  
+
+                <li class="list">
+                    
+                    <div class="Link-container">
+                        <img class="nav-icon" src="/SRC/Imagenes/Imagenes-Principal/telefono (1).png"
+                        alt="Icono simulando un telefono para la pagina de Contáctanos">
+                        <a class="link" href="/SRC/Paginas/ContactUs.html">Contáctanos</a>
+                    </div>
+                    <img class="nav-icon_arrow" src="/SRC/Imagenes/Imagenes-Principal/flecha-correcta.png" alt="">
+                </li>
+                    
+                <li class="list">
+                    
+                    <div class="Link-container">
+                        <img class="nav-icon" src="/SRC/Imagenes/Imagenes-Principal/usuarios.png"
+                        alt="Icono simulando un telefono para la pagina de Contáctanos">
+                        <a class="link" href="#">Nosotros</a>
+                    </div>
+                    <img class="nav-icon_arrow" src="/SRC/Imagenes/Imagenes-Principal/flecha-correcta.png" alt="">
+                </li>                    
             </ul>
         </nav>
     </header>
+
     <main>
         <img class="Principal-Image" src="../Imagenes/Imagenes-Servicios/osos02 (1).png"
             alt="Joven en bicicleta anaranjada">
