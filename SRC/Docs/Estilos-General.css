@@ -16,7 +16,17 @@
     z-index: 1;
 
 }
-
+.logo-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.Menu-Logo{
+    margin-right: 35px;
+    width: 200px;
+    filter: invert(1);
+    filter: invert(1) brightness(1000%) contrast(100%);
+}
 .nav__things {
     display: flex;
     align-items: center;
@@ -229,6 +239,9 @@ body {
         display: none;
     }
 
+    .Menu-Logo{
+        display: none;
+    }
     .navbar {
         width: 100%;
         display: flex;
