@@ -14,7 +14,7 @@ main{
 
 .Principal-Image {
     width: 100%;
-    height: 20vh;
+    height: 90vh;
     filter: brightness(35%);
     object-fit: cover;
     margin-top: 83px;
@@ -152,7 +152,9 @@ main{
         bottom: 75%;
 
     }
-
+    .outstanding{
+        margin-top: 60px;
+    }
     .page-footer {
         bottom: 0;
         right: 0;
@@ -169,7 +171,7 @@ main{
     .carrusel-box{
         width: 1000px;
         height: 600px;
-        margin: 50px auto 0;
+
     }
     .carrusel-text{
         top: 60%;

@@ -108,7 +108,7 @@ main {
     .pages {
         display: flex;
         flex-direction: row;
-        margin: 24px 20px 40px 24px;
+        margin: 0px 20px 40px 24px;
     }
 
     .Principal-Image {
@@ -125,13 +125,14 @@ main {
     }
 
     .title--pages {
-        margin-top: 4%;
+        margin: 50px 0 0 0;
     }
 
     .img {
         height: 250px;
     }
     .page-footer {
+        position: fixed;
         bottom: 0;
         right: 0;
         left: 0;

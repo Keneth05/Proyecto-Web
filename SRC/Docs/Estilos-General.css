@@ -5,7 +5,7 @@
 }
 
 .nav {
-    background-color: var(--ColorHeader);
+    background-color: var(--ColorMenu);
     display: flex;
     flex-direction: row;
     padding: 14px 20px;
@@ -34,7 +34,6 @@
 }
 
 .title {
-    margin-top: 16px;
     font-size: 24px;
 }
 .navbar {
@@ -218,11 +217,10 @@ body {
 
     .navLinks {
         display: flex;
-        flex-direction: row;
         justify-content: flex-end;
         align-items: center;
         right: 0;
-        top: 0;
+        top: -2%;
         background-color: transparent;
         width: 60%;
         height: auto;
