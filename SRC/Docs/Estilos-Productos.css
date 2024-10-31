@@ -14,10 +14,10 @@ main{
 
 .Principal-Image {
     width: 100%;
-    height: 90vh;
+    height: 23vh;
     filter: brightness(35%);
     object-fit: cover;
-    margin-top: 83px;
+    margin-top: 80px;
 }
 
 .image_text {
@@ -144,8 +144,7 @@ main{
 
     .Principal-Image {
         width: 100%;
-        height: 25vh;
-        margin-top: 100px;
+        height: 30vh;
     }
 
     .image_text {
