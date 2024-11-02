@@ -1,9 +1,10 @@
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 * {
     font-family: "Montserrat", serif;
 }
@@ -45,13 +46,14 @@ main{
     color: aliceblue;
 }
 
-.individual-product:hover{
+.individual-product:hover {
     transform: scale(1.1);
 }
 
 .product-information {
     margin: 10px 10px 10px 16px;
 }
+
 .product-name {
     margin: 0px 0px;
     font-size: 18px;
@@ -68,31 +70,36 @@ main{
     object-fit: contain;
     background-color: white;
 }
-.img--Suplements{
+
+.img--Suplements {
     object-fit: fill;
 }
-.title{
+
+.title {
     text-align: center;
     margin: 0;
 }
 
-.carrusel-box{
+.carrusel-box {
     width: 80%;
     height: 60%;
     margin: 10px auto 0;
-    overflow: hidden; 
+    overflow: hidden;
 
 }
-.outstanding{
+
+.outstanding {
     font-size: 24px;
 }
-.carrusel-box ul{
+
+.carrusel-box ul {
     display: flex;
     padding: 0;
     width: 400%;
     animation: slide 12s infinite alternate ease-in-out;
 }
-.slide{
+
+.slide {
 
     width: 100%;
     list-style: none;
@@ -100,36 +107,61 @@ main{
     margin: 0;
 }
 
-.carrusel-text{
+.carrusel-text {
     position: absolute;
     text-align: center;
     top: 56%;
     right: 58%;
     font-size: 13px;
 }
-.descripcion{
+
+.descripcion {
     width: 250%;
 }
-.carrusel-img{
+
+.carrusel-img {
     width: 100%;
     transition: 200ms linear;
 }
-.carrusel-img:hover{
+
+.carrusel-img:hover {
     transform: perspective(220px) rotateY(-0.5deg);
 }
+
 @keyframes slide {
-    0%{ margin-left: 0;}
-    20%{ margin-left: 0;}
-    
-    25%{ margin-left: -100%;}
-    45%{ margin-left: -100%;}
+    0% {
+        margin-left: 0;
+    }
 
-    50%{ margin-left: -200%;}
-    70%{ margin-left: -200%;}
+    20% {
+        margin-left: 0;
+    }
 
-    75%{ margin-left: -300%;}
-    100%{ margin-left: -300%;}
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
 }
+
 @media (min-width:990px) {
     .Products {
         display: flex;
@@ -151,37 +183,29 @@ main{
         bottom: 75%;
 
     }
-    .outstanding{
+
+    .outstanding {
         margin-top: 60px;
     }
-    .page-footer {
-        bottom: 0;
-        right: 0;
-        left: 0;
-    }
 
-    .copyright{
-        margin-top: 14px;
-    }
-    
-    .Privacity, .services{
-        margin-top: 18px;
-    }
-    .carrusel-box{
+    .carrusel-box {
         width: 1000px;
         height: 600px;
 
     }
-    .carrusel-text{
+
+    .carrusel-text {
         top: 60%;
         right: 55%;
         font-size: 22px;
     }
-    .carrusel-img{
+
+    .carrusel-img {
         filter: drop-shadow(0.5rem 0.5rem 0.5rem rgb(70, 69, 69));
         transition: 200ms linear;
     }
-    .carrusel-img:hover{
+
+    .carrusel-img:hover {
         transform: scale(1.02);
         filter: drop-shadow(0.2rem 0.2rem 0.5rem rgb(70, 69, 69));
     }

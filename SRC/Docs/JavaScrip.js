@@ -46,3 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
         MenuDarkView.classList.remove("active");
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems);
+});

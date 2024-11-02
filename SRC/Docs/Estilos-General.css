@@ -16,17 +16,20 @@
     z-index: 1;
 
 }
-.logo-img{
+
+.logo-img {
     display: flex;
     justify-content: center;
     margin-top: 100px;
 }
-.Menu-Logo{
+
+.Menu-Logo {
     margin-right: 35px;
     width: 200px;
     filter: invert(1);
     filter: invert(1) brightness(1000%) contrast(100%);
 }
+
 .nav__things {
     display: flex;
     align-items: center;
@@ -36,6 +39,7 @@
 .title {
     font-size: 24px;
 }
+
 .navbar {
     height: 6vh;
     width: 100%;
@@ -63,25 +67,27 @@
     align-items: center;
 }
 
-.nav-icon{
+.nav-icon {
     width: 25px;
     height: 25px;
     filter: invert(1);
     margin-right: 15px;
 }
 
-.nav-icon_arrow{
+.nav-icon_arrow {
     width: 16px;
     height: 16px;
     filter: invert(1);
     float: right;
 }
+
 .link {
     font-size: 20px;
     color: var(--ColorLetras);
     text-decoration: none;
 }
-.Link-container{
+
+.Link-container {
     display: flex;
     align-items: center;
 
@@ -117,74 +123,103 @@
 }
 
 
+
 .page-footer {
     background-color: var(--ColorMenu);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 14px 10px;
 }
 
-.page-footer__Icons {
-    width: 80%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 30px;
-
-}
-.conditions {
-    width: 270px;
-    display: flex;
-    margin: 0%;
-}
-
-.services {
-    width: 248px;
-}
-
-.footer-text {
-    color: var(--ColorLetras);
-    text-align: center;
-}
-
-.Icon {
-    width: 20px;
+.footer-Icon {
+    justify-content: space-between;
+    width: 25px;
+    height: 25px;
     transition: all ease-in-out 300ms;
 }
-
-.Icon:hover {
+.footer-Icon:hover {
     transform: scale(1.2);
 }
 
-.Icon--Facebook {
-    color: var(--ColorLetras);
+.titleandBicycle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.Icon--Instagram {
-    color: var(--ColorLetras);
+.Ftitle--name {
+    margin-left: 15px;
+    justify-content: space-between;
 }
 
-.Icon--Email {
-    color: var(--ColorLetras);
+.social-media {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+
 }
+
+.conditions {
+    display: flex;
+    text-align: center;
+}
+
+.footer-info {
+    padding: 20px;
+}
+
 
 .MenuDarkView {
-    position: fixed;                 
-    width: 100vw;                
-    height: 100vh;              
-    background-color: rgba(0, 0, 0, 0.822); 
-    z-index: 1;    
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.822);
+    z-index: 1;
     opacity: 0;
-    pointer-events: none;     
-    transition: opacity 0.3s ease;                   
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+}
+
+.info-text {
+    margin-left: 15px;
+    width: 100%;
+    color: var(--ColorLetras);
+    margin-top: 10px;
 }
 
 .MenuDarkView.active {
-    opacity: 1;               /* Visible cuando se activa */
-    pointer-events: auto;     /* Permite hacer clic cuando está visible */
+    opacity: 1;
+    pointer-events: auto;
 }
 
+.Ftitle,
+.info-text {
+    color: var(--ColorLetras);
+}
+
+.Ftitle {
+    margin-top: 8px;
+}
+
+.footer-Links {
+    list-style: none;
+}
+
+.text--conditions{
+    width: 100%;
+}
+.LinksContainer a {
+    color: var(--ColorLetras);
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.LinksContainer {
+    padding: 0;
+}
 
 body {
     margin: 0 auto;
@@ -198,7 +233,7 @@ body {
         font-size: 19px;
     }
 
-    .nav-icon_arrow{
+    .nav-icon_arrow {
         display: none;
     }
 
@@ -237,16 +272,17 @@ body {
         display: none;
     }
 
-    .Menu-Logo{
+    .Menu-Logo {
         display: none;
     }
+
     .navbar {
         width: 100%;
         display: flex;
         align-items: center;
     }
 
-    .nav-icon{
+    .nav-icon {
         display: none;
     }
 
@@ -269,7 +305,23 @@ body {
     .Icon--burger {
         display: none;
     }
-    .Icon-container{
+
+    .Icon-container {
         display: none;
+    }
+    .page-footer__info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .text--conditions{
+        width: 100%;
+    }
+    .footer-info--pages-links{
+        margin-left: 110px;
+    }
+    .footer-info {
+        width: 330px;
+        padding: 20px;
     }
 }
