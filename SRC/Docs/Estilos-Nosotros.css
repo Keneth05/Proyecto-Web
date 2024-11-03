@@ -1,0 +1,28 @@
+
+.Principal-Image {
+    width: 100%;
+    height: 23vh;
+    filter: brightness(35%);
+    object-fit: cover;
+    margin-top: 80px;
+}
+
+.image_text {
+    text-align: center;
+    position: absolute;
+    color: var(--ColorLetras);
+    backdrop-filter: blur(1px);
+    bottom: 80%;
+    width: 100%;
+}
+
+
+
+@media (min-width:605px) {
+    .equal-height {
+        min-height: 300px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

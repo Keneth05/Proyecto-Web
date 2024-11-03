@@ -41,6 +41,7 @@
 }
 
 .navbar {
+    background-color: var(--ColorMenu);
     height: 6vh;
     width: 100%;
     display: flex;
@@ -147,6 +148,7 @@
 
 .Ftitle--name {
     margin-left: 15px;
+    margin-bottom: 10px;
     justify-content: space-between;
 }
 
@@ -163,7 +165,7 @@
 }
 
 .footer-info {
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
 }
 
 
@@ -255,7 +257,7 @@ body {
         justify-content: flex-end;
         align-items: center;
         right: 0;
-        top: -2%;
+        top: -1.5%;
         background-color: transparent;
         width: 60%;
         height: auto;
@@ -323,5 +325,14 @@ body {
     .footer-info {
         width: 330px;
         padding: 20px;
+    }
+    .info-text--factory-descripcion{
+        margin-left: 0;
+    }
+    .LinksContainer .footer-Links a:hover{
+        transform: scale(1.1);
+        transition: all ease-in-out 250ms;
+        color: rgb(10, 0, 0);
+        text-decoration: underline;
     }
 }
