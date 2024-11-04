@@ -29,25 +29,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const menuCheckbox = document.getElementById("Hamburger-menu");
-    const MenuDarkView = document.getElementById("MenuDarkView");
-
-    menuCheckbox.addEventListener("change", () => {
-        if (menuCheckbox.checked) {
-            MenuDarkView.classList.add("active");
-        } else {
-            MenuDarkView.classList.remove("active");
-        }
-    });
-
-    MenuDarkView.addEventListener("click", () => {
-        menuCheckbox.checked = false;
-        MenuDarkView.classList.remove("active");
-    });
-});
-
 document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.slider');
-    var instances = M.Slider.init(elems);
+    // Inicializar el sidenav
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems,{edge:'right'});
+
+    // Cerrar el sidenav al hacer clic en el icono de "X"
+    document.querySelector('.close-sidenav').addEventListener('click', function(event) {
+        event.preventDefault();
+        var instance = M.Sidenav.getInstance(document.querySelector('.sidenav'));
+        instance.close();
+    });
 });

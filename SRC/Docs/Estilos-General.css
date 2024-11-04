@@ -3,26 +3,17 @@
     --ColorMenu: #004c70;
     --ColorLetras: aliceblue;
 }
-
-.nav {
-    background-color: var(--ColorMenu);
-    display: flex;
-    flex-direction: row;
-    padding: 14px 20px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
-
-}
-
 .logo-img {
     display: flex;
     justify-content: center;
     margin-top: 100px;
 }
-
+.Principal-Image {
+    width: 100%;
+    height: 23vh;
+    filter: brightness(35%);
+    object-fit: cover;
+}
 .Menu-Logo {
     margin-right: 35px;
     width: 200px;
@@ -39,7 +30,18 @@
 .title {
     font-size: 24px;
 }
+.logo-text{
+    font-size: 20px;
+    margin-left: 7px;
+}
 
+.nav-wrapper .brand-logo{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-bottom: 8px;
+}
 .navbar {
     background-color: var(--ColorMenu);
     height: 6vh;
@@ -68,62 +70,44 @@
     align-items: center;
 }
 
-.nav-icon {
-    width: 25px;
-    height: 25px;
-    filter: invert(1);
-    margin-right: 15px;
+.nav-background {
+    background-color: #004a70;
 }
 
-.nav-icon_arrow {
-    width: 16px;
-    height: 16px;
-    filter: invert(1);
-    float: right;
+.sidenav {
+    background-color: #01527ad0;
 }
 
-.link {
-    font-size: 20px;
-    color: var(--ColorLetras);
-    text-decoration: none;
+.brand-logo .logo {
+    height: 40px;
+    margin-right: 10px;
 }
 
-.Link-container {
+.Menu-Logo {
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 200px;
+    filter: invert(1) brightness(1000%) contrast(100%);
+}
+.sidenav .close-sidenav{
     display: flex;
+    justify-content: center;
     align-items: center;
-
+    background-color: #044f72;
+    height: 56px;
 }
 
-.Hamburger-menu {
-    display: none;
+.sidenav .close-sidenav i {
+    font-size: 36px;
 }
 
-#Hamburger-menu:checked~.navLinks {
-    right: 0;
+.Link{
+    margin-top: 20px;
 }
 
-
-.title--nav {
-    padding-top: 10px;
-    font-size: 19px;
-    color: var(--ColorLetras);
-
+.sidenav a.Link {
+    font-size: 20px;
 }
-
-.nav__logo {
-    margin-right: 15px;
-    width: 50px;
-    height: 50px;
-    padding-top: 1%;
-}
-
-.Icon--burger {
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
-}
-
-
 
 .page-footer {
     background-color: var(--ColorMenu);
@@ -204,6 +188,8 @@
 
 .Ftitle {
     margin-top: 8px;
+    font-size: 26px;
+    font-weight: 500;
 }
 
 .footer-Links {
