@@ -4,126 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Docs/Estilos-General.css">
-    <link rel="stylesheet" href="..//Docs/Estilos-Productos.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="..//Docs/Estilos-Productos.css">
+    <link rel="stylesheet" href="../Docs/Estilos-General.css">
     <title>Productos</title>
 </head>
 <div class="MenuDarkView" id="MenuDarkView"></div>
+
 <body>
-    <header class="nav">
-        <nav class="navbar">
-            <div class="nav__things">
-                <img class="nav__logo" src="../Imagenes/Imagenes-Principal/processed_image_no_background.png"
-                    alt="Logo de la empresa Osos bike shop">
-                <h1 class="title--nav">Osos Bike Shop</h1>
-            </div>
-            <label for="Hamburger-menu" class="label-menu">
-                <img class="Icon Icon--burger" src="../Imagenes/Imagenes-Principal/bars-solid (1).svg"
-                    alt="Logo del menu para Mobiles">
-            </label>
-
-            <input type="checkbox" class="Hamburger-menu" id="Hamburger-menu">
-
-            <ul class="navLinks">
-                <li class="list">
-
-                    <div class="Link-container">
-                        <img class="nav-icon" src="/SRC/Imagenes/Imagenes-Principal/hogar.png"
-                        alt="Icono simulando una casa para la pagina principal">
-                        <a class="link" href="/SRC/Paginas/Principal.html">Principal</a>
-                    </div>
-                    <img class="nav-icon_arrow" src="/SRC/Imagenes/Imagenes-Principal/flecha-correcta.png" alt="">
-                </li>
-
-                <li class="list">
-                    
-                    <div class="Link-container">
-                        <img class="nav-icon" src="/SRC/Imagenes/Imagenes-Principal/carrito-de-compras.png"
-                        alt="Icono simulando un carrito de compra para la pagina de productos">
-                        <a class="link" href="/SRC/Paginas/Productos.html">Productos</a>
-                    </div>
-                    <img class="nav-icon_arrow" src="/SRC/Imagenes/Imagenes-Principal/flecha-correcta.png" alt="">
-                </li>
-
-                <li class="list">
-                    
-                    <div class="Link-container">
-                        <img class="nav-icon" src="/SRC/Imagenes/Imagenes-Principal/llave.png"
-                        alt="Icono simulando una llave de herramienta para la pagina de servicios">
-                        <a class="link" href="/SRC/Paginas/Services.html">Servicios</a>
-                    </div>
-                    <img class="nav-icon_arrow" src="/SRC/Imagenes/Imagenes-Principal/flecha-correcta.png" alt="">
-                </li>  
-
-                <li class="list">
-                    
-                    <div class="Link-container">
-                        <img class="nav-icon" src="/SRC/Imagenes/Imagenes-Principal/telefono (1).png"
-                        alt="Icono simulando un telefono para la pagina de Contáctanos">
-                        <a class="link" href="/SRC/Paginas/ContactUs.html">Contáctanos</a>
-                    </div>
-                    <img class="nav-icon_arrow" src="/SRC/Imagenes/Imagenes-Principal/flecha-correcta.png" alt="">
-                </li>
-                    
-                <li class="list">
-                    
-                    <div class="Link-container">
-                        <img class="nav-icon" src="/SRC/Imagenes/Imagenes-Principal/usuarios.png"
-                        alt="Icono simulando un telefono para la pagina de Contáctanos">
-                        <a class="link" href="#">Nosotros</a>
-                    </div>
-                    <img class="nav-icon_arrow" src="/SRC/Imagenes/Imagenes-Principal/flecha-correcta.png" alt="">
-                </li>  
-                <div class="logo-img">
-                    <img class="Menu-Logo" src="/SRC/Imagenes/Imagenes-Principal/logo-vertical (1).png" alt="Imagen del logo de la empresa" width="100px">
-                </div>                  
-            </ul>
-        </nav>
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-background">
+                <div class="nav-wrapper">
+                    <a href="../Paginas/ContactUs.html" class="brand-logo left">
+                        <img src="../Imagenes/Imagenes-Principal/processed_image_no_background.png" alt="" class="logo">
+                        <span class="logo-text">Osos Bike Shop</span>
+                    </a>
+                    <a href="#" data-target="mobile-menu" class="sidenav-trigger right">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="/SRC/Paginas/Principal.html">Principal</a></li>
+                        <li><a href="/SRC/Paginas/Productos.html">Productos</a></li>
+                        <li><a href="/SRC/Paginas/Services.html">Servicios</a></li>
+                        <li><a href="/SRC/Paginas/ContactUs.html">Contáctanos</a></li>
+                        <li><a href="/SRC/Paginas/Nosotros.html">Nosotros</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <ul class="sidenav" id="mobile-menu">
+            <li>
+                <a href="#" class="close-sidenav">
+                    <i class="material-icons white-text">close</i>
+                </a>
+            </li>
+            <li><a href="/SRC/Paginas/Principal.html"class="white-text Link"><i class="material-icons white-text">home</i>
+                    Principal</a></li>
+            <li><a href="/SRC/Paginas/Productos.html"class="white-text Link"><i class="material-icons white-text">shopping_cart</i>
+                    Productos</a></li>
+            <li><a href="/SRC/Paginas/Services.html"class="white-text Link"><i class="material-icons white-text">build</i>
+                    Servicios</a></li>
+            <li><a href="/SRC/Paginas/ContactUs.html"class="white-text Link"><i class="material-icons white-text">phone</i>
+                    Contáctanos</a></li>
+            <li><a href="/SRC/Paginas/Nosotros.html"class="white-text Link"><i class="material-icons white-text">people</i>
+                    Nosotros</a></li>
+            <li class="sidenav-footer">
+                <img src="/SRC/Imagenes/Imagenes-Principal/logo-vertical (1).png" alt="Logo Empresa" class="Menu-Logo">
+            </li>
+        </ul>
     </header>
     <main>
-        <img class="Principal-Image" src="../Imagenes/Imagenes-Productos/osos01.png"
+        <img class="Principal-Image" src="../Imagenes/Imagenes-Productos/pexels-truckrun-19423670.jpg"
             alt="Joven en bicicleta anaranjada">
         <div class="image_text">
             <p class="ProductsFrase">Encuentra tu compañera ideal para cualquier terreno y estilo</p>
         </div>
-            <h1 class="outstanding">Bicicletas Destacadas</h1>
+        <h1 class="outstanding">Bicicletas Destacadas</h1>
 
         <div class="carrusel-box">
             <ul>
                 <li class="slide">
-                    <img src="/SRC/Imagenes/Imagenes-Productos/BiciEnduro.png" alt="Bicicleta de enduro" class="carrusel-img">
+                    <img src="/SRC/Imagenes/Imagenes-Productos/BiciEnduro.png" alt="Bicicleta de enduro"
+                        class="carrusel-img">
                     <div class="carrusel-text">
                         <h3 class="descripcion">Bicicletas de Enduro</h3>
                     </div>
                 </li>
 
                 <li class="slide">
-                    <img src="/SRC/Imagenes/Imagenes-Productos/BiciRutaM.png" alt="Bicicleta de Ruta" class="carrusel-img">
+                    <img src="/SRC/Imagenes/Imagenes-Productos/BiciRutaM.png" alt="Bicicleta de Ruta"
+                        class="carrusel-img">
                     <div class="carrusel-text">
                         <h3 class="descripcion">Bicicletas de Ruta</h3>
                     </div>
                 </li>
 
                 <li class="slide">
-                    <img src="/SRC/Imagenes/Imagenes-Productos/biciCross.png" alt="Bicicleta de Cross MTB" class="carrusel-img">
+                    <img src="/SRC/Imagenes/Imagenes-Productos/biciCross.png" alt="Bicicleta de Cross MTB"
+                        class="carrusel-img">
                     <div class="carrusel-text">
                         <h3 class="descripcion">Bicicletas de Cross Montain Bike</h3>
                     </div>
                 </li>
 
                 <li class="slide">
-                    <img src="/SRC/Imagenes/Imagenes-Productos/BiciGravel.png" alt="Bicicleta de  Gravel" class="carrusel-img">
+                    <img src="/SRC/Imagenes/Imagenes-Productos/BiciGravel.png" alt="Bicicleta de  Gravel"
+                        class="carrusel-img">
                     <div class="carrusel-text">
                         <h3 class="descripcion">Bicicletas de Gravel</h3>
                     </div>
                 </li>
-            
             </ul>
 
         </div>
@@ -140,8 +122,8 @@
             </article>
 
             <article class="individual-product individual-product--Breaks">
-                <img src="/SRC/Imagenes/Imagenes-Productos/Frenos.jfif"
-                    alt="Frenos Bicicleta negros" class="img  img--Breaks">
+                <img src="/SRC/Imagenes/Imagenes-Productos/Frenos.jfif" alt="Frenos Bicicleta negros"
+                    class="img  img--Breaks">
                 <div class="product-information">
                     <h2 class="product-name">Frenos</h2>
                     <h3 class="product-type">Empty</h3>
@@ -158,8 +140,8 @@
             </article>
 
             <article class="individual-product individual-product--Shoes">
-                    <img src="/SRC/Imagenes/Imagenes-Productos/Zapatos.webp"
-                    alt="Frenos Bicicleta negros" class="img  img--Shoes">
+                <img src="/SRC/Imagenes/Imagenes-Productos/Zapatos.webp" alt="Frenos Bicicleta negros"
+                    class="img  img--Shoes">
                 <div class="product-information">
                     <h2 class="product-name">Zapatos para Ciclismo</h2>
                     <h3 class="product-type">Empty</h3>
@@ -167,8 +149,8 @@
             </article>
 
             <article class="individual-product individual-product--Clothes">
-                    <img src="/SRC/Imagenes/Imagenes-Productos/Uniforme ciclismo.jfif"
-                    alt="Frenos Bicicleta negros" class="img  img--Clothes">
+                <img src="/SRC/Imagenes/Imagenes-Productos/Uniforme ciclismo.jfif" alt="Frenos Bicicleta negros"
+                    class="img  img--Clothes">
                 <div class="product-information">
                     <h2 class="product-name">Uniformes para Ciclismo</h2>
                     <h3 class="product-type">Empty</h3>
@@ -176,8 +158,8 @@
             </article>
 
             <article class="individual-product individual-product--Glases">
-                <img src="/SRC/Imagenes/Imagenes-Productos/Gafas.jfif"
-                    alt="Frenos Bicicleta negros" class="img  img--Glases">
+                <img src="/SRC/Imagenes/Imagenes-Productos/Gafas.jfif" alt="Frenos Bicicleta negros"
+                    class="img  img--Glases">
                 <div class="product-information">
                     <h2 class="product-name">Lentes para Ciclismo</h2>
                     <h3 class="product-type">Empty</h3>
@@ -185,8 +167,8 @@
             </article>
 
             <article class="individual-product individual-product--Wheels">
-                <img src="/SRC/Imagenes/Imagenes-Productos/Llanta.jfif"
-                    alt="Frenos Bicicleta negros" class="img  img--Wheels">
+                <img src="/SRC/Imagenes/Imagenes-Productos/Llanta.jfif" alt="Frenos Bicicleta negros"
+                    class="img  img--Wheels">
                 <div class="product-information">
                     <h2 class="product-name">Llantas para Ciclismo</h2>
                     <h3 class="product-type">Empty</h3>
@@ -194,8 +176,8 @@
             </article>
 
             <article class="individual-product individual-product--Accesories">
-                <img src="/SRC/Imagenes/Imagenes-Productos/Accesorios.jfif"
-                    alt="Frenos Bicicleta negros" class="img  img--Accesories">
+                <img src="/SRC/Imagenes/Imagenes-Productos/Accesorios.jfif" alt="Frenos Bicicleta negros"
+                    class="img  img--Accesories">
                 <div class="product-information">
                     <h2 class="product-name">Accesorios para Ciclismo</h2>
                     <h3 class="product-type">Empty</h3>
@@ -205,26 +187,84 @@
     </main>
 
     <footer class="page-footer">
-        <div class="page-footer__Icons">
-            <a class="Icon Icon--Facebook" href="https://www.facebook.com/share/ZbFzsdYR76BZMV1v/?mibextid=kFxxJD"
-                target="_blank"> <i class="fa-brands fa-square-facebook"></i></a>
 
-            <a class="Icon Icon--Instagram"
-                href="https://www.instagram.com/ososbikeshop?igsh=MTM0dXVjdTFoNnBuNA%3D%3D&utm_source=qr"
-                target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        <div class="page-footer__info">
+            <article class="footer-info footer-info--contact">
+                <div class="titleandBicycle">
+                    <img src="/SRC/Imagenes/Imagenes-Principal/bicicleta.png" alt="Icono de persona en bicicleta"
+                        class="footer-Icon">
+                    <div class="factory-name">
+                        <h3 class="Ftitle Ftitle--name">Osos Bike Shop</h3>
+                    </div>
+                </div>
 
-            <a class="Icon Icon--Email" href="Mailto:Ososbikes@gmail.com" target="_blank"><i
-                    class="fa-solid fa-envelope"></i></a>
+                <div class="footer-description">
+                    <p class="info-text info-text--factory-descripcion">Tu tienda de confianza para todo lo relacionado con
+                        bicicletas.
+                        Ofrecemos productos de calidad y servicio exepcional
+                    </p>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/share/ZbFzsdYR76BZMV1v/?mibextid=kFxxJD">
+                        <img class="footer-Icon footer-Icon--facebook"
+                            src="/SRC/Imagenes/Imagenes-Footer/facebook (3).png" alt="Logo de red social Facebook">
+                    </a>
+
+                    <a href="https://www.instagram.com/ososbikeshop?igsh=MTM0dXVjdTFoNnBuNA%3D%3D&utm_source=qr">
+                        <img class="footer-Icon footer-Icon--instagram"
+                            src="/SRC/Imagenes/Imagenes-Footer/logotipo-de-instagram (1).png"
+                            alt="Logo de red social Instagram">
+                    </a>
+
+                    <a href="Mailto:Ososbikes@gmail.com">
+                        <img class="footer-Icon footer-Icon--Gmail" src="/SRC/Imagenes/Imagenes-Footer/gmail (2).png"
+                            alt="Logo de Gmail">
+                    </a>
+                </div>
+            </article>
+            <article class="footer-info footer-info--pages-links">
+                <h3 class="Ftitle Ftitle--links">Enlaces Rápidos</h3>
+                <ul class="LinksContainer">
+                    <li class="footer-Links"><a href="/SRC/Paginas/Principal.html">Principal</a></li>
+                    <li class="footer-Links"><a href="/SRC/Paginas/Productos.html">Productos</a></li>
+                    <li class="footer-Links"><a href="/SRC/Paginas/Services.html">Servicios</a></li>
+                    <li class="footer-Links"><a href="/SRC/Paginas/ContactUs.html">Contáctanos</a></li>
+                    <li class="footer-Links"><a href="/SRC/Paginas/Nosotros.html">Nosotros</a></li>
+                </ul>
+            </article>
+            <article class="footer-info footer-info--contact-info">
+                <h3 class="Ftitle Ftitle--Contact">Contacto</h3>
+                <div class="contact-info-item">
+                    <img src="/SRC/Imagenes/Imagenes-Footer/marcador-de-posicion (1).png"
+                        alt="Icono para simular la ubicacion del lugar" class="footer-Icon">
+                    <div class="text">
+                        <p class="info-text">50 m este de CONCREPAL, Buenos Aires, Palmares, Alajuela.</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <img src="/SRC/Imagenes/Imagenes-Footer/telefono (2).png"
+                        alt="Icono para simular el telefono de la empresa" class="footer-Icon">
+                    <div class="text">
+                        <p class="info-text">8457-2016</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <img src="/SRC/Imagenes/Imagenes-Footer/gmail (3).png"
+                        alt="Icono para simular el Gmail de la empresa" class="footer-Icon">
+                    <div class="text">
+                        <a class="info-text" href="mailto:Ososbikes@gmail.com">Ososbikes@gmail.com</a>
+                    </div>
+                </div>
+            </article>
         </div>
-        <div class="footer-text copyright">
-            <p class="copyright">2024 Osos Bike Shop todos los derechos reservados</p>
+        <hr>
+        <div class="conditions">
+            <p class="info-text info-text--conditions">2024 Osos Bike Shop todos los derechos reservados</p>
         </div>
-        <div class="footer-text conditions">
-            <p class="footer-text services">Terminos y servicios</p>
-            <p class="footer-text Privacity">Privacidad</p>
-        </div>
-        
     </footer>
     <script src="/SRC/Docs/JavaScrip.js"></script>
 </body>
+
 </html>
