@@ -41,3 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         instance.close();
     });
 });
+
+document.addEventListener('DOMContentLoaded', function(){
+    M.AutoInit();
+});

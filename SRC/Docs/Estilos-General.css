@@ -8,12 +8,12 @@
     justify-content: center;
     margin-top: 100px;
 }
-/* .Principal-Image {
+.Principal-Image {
     width: 100%;
-    height: 23vh;
+    height: 30vh;
     filter: brightness(35%);
     object-fit: cover;
-} */
+}
 .Menu-Logo {
     margin-right: 35px;
     width: 200px;

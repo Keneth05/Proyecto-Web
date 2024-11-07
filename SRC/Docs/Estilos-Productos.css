@@ -5,13 +5,25 @@ main {
     justify-content: center;
 }
 
+.ImgCard {
+    height: 200px;
+    object-fit: contain;
+}
+
+.BodyCard {
+    height: 400px;
+}
+
+.ProductsContainer{
+    background-color: #f5f5f5;
+}
+.tabsContainer{
+    background-color: #f5f5f5;
+}
 * {
     font-family: "Montserrat", serif;
 }
 
-.ProductsFrase {
-    font-family: "Poppins", sans-serif;
-}
 
 .image_text {
     text-align: center;
@@ -22,55 +34,6 @@ main {
     width: 100%;
 }
 
-.Products {
-    justify-content: center;
-    align-items: center;
-    margin: 35px 16px;
-}
-
-.individual-product {
-    box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.164);
-    transition: all ease-in-out 250ms;
-    border-radius: 0.5em;
-    height: 295px;
-    margin: 6% 2%;
-    background-color: var(--ColorMenu);
-    color: aliceblue;
-}
-
-.individual-product:hover {
-    transform: scale(1.1);
-}
-
-.product-information {
-    margin: 10px 10px 10px 16px;
-}
-
-.product-name {
-    margin: 0px 0px;
-    font-size: 18px;
-}
-
-.product-type {
-    font-size: 16px;
-}
-
-.img {
-    border-radius: 0.5em 0.5em 0em 0em;
-    width: 100%;
-    height: 190px;
-    object-fit: contain;
-    background-color: white;
-}
-
-.img--Suplements {
-    object-fit: fill;
-}
-
-.title {
-    text-align: center;
-    margin: 0;
-}
 
 .carrusel-box {
     width: 80%;
@@ -78,10 +41,6 @@ main {
     margin: 10px auto 0;
     overflow: hidden;
 
-}
-
-.outstanding {
-    font-size: 24px;
 }
 
 .carrusel-box ul {
@@ -156,16 +115,6 @@ main {
 }
 
 @media (min-width:990px) {
-    .Products {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 1500px;
-    }
-
-    .individual-product {
-        width: 23%;
-        margin: 14px;
-    }
 
     .Principal-Image {
         width: 100%;
@@ -175,10 +124,6 @@ main {
     .image_text {
         bottom: 75%;
 
-    }
-
-    .outstanding {
-        margin-top: 60px;
     }
 
     .carrusel-box {

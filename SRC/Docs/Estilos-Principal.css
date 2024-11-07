@@ -5,16 +5,20 @@ main {
     align-items: center;
     justify-content: center;
 }
-.white-text.slogan{
+
+.white-text.slogan {
     font-size: 32px;
 }
-.btn{
+
+.btn {
     border-radius: 1.5rem;
 }
-.image-container{
+
+.image-container {
     width: 100%;
 }
-.image-background{
+
+.image-background {
     width: 100%;
     height: 80vh;
     object-fit: cover;
@@ -22,14 +26,15 @@ main {
     filter: brightness(85%);
 
 }
-.Welcome{
+
+.Welcome {
     width: 100%;
     position: absolute;
     background: rgba(0, 0, 0, 0.041);
     padding-bottom: 40px 25px;
 }
 
-.Icon{
+.Icon {
     background-color: #004c70;
     width: 40px;
     height: 40px;
@@ -40,135 +45,122 @@ main {
     margin: 0 auto;
 }
 
-.info{
+.info {
     margin-top: 30px;
 }
 
-.Title{
+.Title {
     display: flex;
     flex-direction: row;
 
 }
-
-.pageBtn{
+.Hola{
     width: 100%;
 }
-
-.pageIcons{
-    color:#068dcc;
+.pageBtn {
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    color: white;
+    transition: color 0.5s ease;
 }
 
-.ola{
+.pageBtn:hover {
+    background-color: #046a99;
+}
+
+.pageBtn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #046a99, #3bb5ee, #303030);
+    background-size: 200% 200%;
+    transform: translateX(-100%);
+    z-index: -1;
+}
+
+@keyframes waveAnimation {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.pageBtn:hover::after {
+    animation: waveAnimation 1s ease forwards;
+}
+
+.pageIcons {
+    color: #0376ac;
+}
+
+.CardHeader {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-weight: 600;
 }
 
+.Bproducts {
+    background-color: #0482bd;
+}
+
+.Bproducts:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.BContact {
+    background-color: aliceblue;
+    color: black;
+}
+
+.BContact:hover {
+    background-color: #0482bd;
+    color: aliceblue;
+}
+
+.DesBoton{
+    background-color: black;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.Uptitles{
+    margin-top: 15px;
+}
 
 * {
     font-family: "Montserrat", serif;
-} 
-
-.page .title {
-    margin-bottom: 2%;
 }
 
-
-.title {
-    margin-bottom: 8px;
-}
-
-.parrafo {
-    margin-top: 8px;
-    opacity: 60%;
-    font-size: 22px;
-}
-
-.pages {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 3%;
-}
-
-.img {
-    border-radius: 0.5em;
+.Despedida {
+    background-color: #f5f5f5;
+    color: whitesmoke;
+    padding: 10px 0px 60px 15px;
     width: 100%;
-    height: 190px;
-    object-fit: cover;
-}
-
-.page {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    max-width: 100%;
-    margin: 3%;
-    padding: 3%;
-    border-radius: 1em;
-    box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.164);
 }
 
-.enlace {
-    background-color: var(--ColorHeader);
-    padding: 2.5% 2.5%;
-    border-radius: 8px;
-    text-decoration: none;
-    color: var(--ColorLetras);
-    transition: all ease-in-out 400ms;
+.text {
+    width: 100%;
 }
 
-.enlace:hover {
-    background-color: #043f83;
-    transition: all ease-in-out 400ms;
-    transform: scale(1.1);
-    padding-left: 4%;
-    padding-right: 4%;
-    border-radius: 12px;
-}
-
-
-.enlace--Contact-Us {
-    background-color: rgba(240, 248, 255, 0.377);
-}
-
-.enlace--Contact-Us:hover {
-    background-color: #3277c5be;
+.Options {
+    width: 100%;
+    padding: 20px;
+    background-color: #f5f5f5;
 }
 
 @media (min-width:990px) {
-    .pages {
-        display: flex;
-        flex-direction: row;
-        margin: 0px 20px 40px 24px;
-    }
 
-    .page {
-        min-height: 20vh;
-        flex-wrap: wrap;
-        width: 100%;
-        margin-bottom: 0.5%;
-        padding: 1%;
-    }
-
-    .title--pages {
-        margin: 50px 0 0 0;
-    }
-
-    .img {
-        height: 250px;
-    }
-    .page-footer {
-        bottom: 0;
-        right: 0;
-        left: 0;
-    }
-    .Welcome{
-        background: rgba(0, 0, 0, 0.322);
-        box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.829);
+    .text {
+        width: 59.1%;
     }
 }
