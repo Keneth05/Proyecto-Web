@@ -26,7 +26,7 @@
     <header>
         <div class="navbar-fixed">
             <nav class="nav-background">
-                <div class="nav-wrapper">
+                <div class="nav-wrapper Header">
                     <a href="../Paginas/ContactUs.html" class="brand-logo left">
                         <img src="../Imagenes/Imagenes-Principal/processed_image_no_background.png" alt="" class="logo">
                         <span class="logo-text">Osos Bike Shop</span>
@@ -71,12 +71,24 @@
         </ul>
     </header>
     <main>
-        <img class="Principal-Image" src="../Imagenes/Imagenes-Productos/pexels-truckrun-19423670.jpg"
-            alt="Joven en bicicleta anaranjada">
-        <div class="image_text">
-            <p class="ProductsFrase">Encuentra tu compañera ideal para cualquier terreno y estilo</p>
-        </div>
-        <h1 class="outstanding">Bicicletas Destacadas</h1>
+        <section class="image-container valign-wrapper">
+            <img class="image-background" src="..//Imagenes/Imagenes-Productos/bici4.webp" alt="">
+            <header class="row Welcome">
+                <div class="col s12">
+                    <h2 class="white-text slogan">Encuentra tu compañera ideal para cualquier terreno y estilo</h2>
+                </div>
+
+                <div class="col s12">
+                    <p class="white-text">Descubre nuestra selección premium de bicicletas y accesorios para elevar tu experiencia ciclista</p>
+                </div>
+
+                <div class="col s12">
+                    <a href="#ProductsTitle" class="btn BCatalogo">Ver Catalogo
+                        <i class="material-icons right">directions_bike</i>
+                    </a>
+                </div>
+            </header>
+        </section>
 
         <div class="carrusel-box">
             <ul>
@@ -115,30 +127,32 @@
 
         </div>
 
-        <div class="row" style="width: 100%;">
-            <div class="col s12 m12">
+
+        <div class="row GeneralContainer"id="TabTitle">
+
+            <div class="col s12 m12 container">
                 <div class="card">
                     <div class="card-content ProductsContainer">
-                        <h3 class="card-title center">Productos Destacados</h3>
+                        <h3 class="card-title center" id="ProductsTitle" > Productos Destacados</h3>
                     </div>
                     <div class="card-tabs ">
                         <ul class="tabs tabs-fixed-width tabsContainer">
                             <li class="tab"> <a href="#testUno">Todo</a></li>
-                            <li class="tab"> <a href="#testDos">Test Dos</a></li>
-                            <li class="tab"> <a href="#testTres">Test Tres</a></li>
+                            <li class="tab"> <a href="#testDos">Partes</a></li>
+                            <li class="tab"> <a href="#testTres">Nutrición</a></li>
                         </ul>
                     </div>
                     <div class="card-content ProductsContainer">
                         <section id="testUno">
-                            <div class="row">
-                                <article class="col s12 m4">
+                            <div class="row" >
+                                <article class="col s12 m6 l4">
                                     <div class="card BodyCard">
                                         <div class="card-image">
                                             <img class="ImgCard"
                                                 src="/SRC/Imagenes/Imagenes-Productos/suspenciones.jpeg"
                                                 alt="Suspenciones Fox, color negro y plateado">
                                         </div>
-                                        <div class="card-content" style="padding: 14px;">
+                                        <div class="card-content IndividualProductContainer" >
                                             <h5 class="card-title">Suspenciones Fox</h5>
 
                                             <div class="valign-wrapper">
@@ -149,26 +163,24 @@
                                                 <i class="material-icons yellow-text text-darken-2">star_half</i>
                                                 <span class="grey-text text-darken-1"
                                                     style="margin-left: 10px; font-weight: bold">4.8</span>
-
                                             </div>
                                             <p class="blue-text text-darken-4"
                                                 style="font-weight: bold; margin-top: 13px;">₡450,000</p>
-                                            <footer class="card-action center" style="margin-bottom: 30px;">
-                                                <a href="#" class="btn black white-text center">Agregar al Carrito
-                                                    <i class="material-icons right">shopping_cart</i>
-                                                </a>
-                                            </footer>
                                         </div>
+                                        <footer class="card-action center BottonContainer">
+                                            <a href="#" class="btn center ADDCar">Agregar a lista
+                                            </a>
+                                        </footer>
                                     </div>
                                 </article>
 
-                                <article class="col s12 m4">
+                                <article class="col s12 m6 l4">
                                     <div class="card BodyCard">
                                         <div class="card-image">
                                             <img class="ImgCard" src="/SRC/Imagenes/Imagenes-Productos/non.png"
                                                 alt="Frenos Shimano XT, color negro y gris">
                                         </div>
-                                        <div class="card-content adios" style="padding: 14px;">
+                                        <div class="card-content IndividualProductContainer">
                                             <h5 class="card-title">Frenos Shimano XT</h5>
 
                                             <div class="valign-wrapper">
@@ -183,22 +195,21 @@
                                             </div>
                                             <p class="blue-text text-darken-4"
                                                 style="font-weight: bold; margin-top: 13px;">₡175,000</p>
-                                            <footer class="card-action center" style="padding-bottom: 5px;">
-                                                <a href="#" class="btn black white-text center">Agregar al Carrito
-                                                    <i class="material-icons right">shopping_cart</i>
-                                                </a>
-                                            </footer>
                                         </div>
+                                        <footer class="card-action center BottonContainer">
+                                            <a href="#" class="btn center ADDCar">Agregar a lista
+                                            </a>
+                                        </footer>
                                     </div>
                                 </article>
 
-                                <article class="col s12 m4">
+                                <article class="col s12 m6 l4">
                                     <div class="card BodyCard">
                                         <div class="card-image">
                                             <img class="ImgCard" src="/SRC/Imagenes/Imagenes-Productos/zpatatos1.jpg"
                                                 alt="Zapatillas Sidi color negro con plateado">
                                         </div>
-                                        <div class="card-content adios" style="padding: 14px;">
+                                        <div class="card-content IndividualProductContainer">
                                             <h5 class="card-title">Zapatillas Sidi</h5>
 
                                             <div class="valign-wrapper">
@@ -213,24 +224,23 @@
                                             </div>
                                             <p class="blue-text text-darken-4"
                                                 style="font-weight: bold; margin-top: 13px;">₡125,000</p>
-                                            <footer class="card-action center" style="padding-bottom: 5px;">
-                                                <a href="#" class="btn black white-text center">Agregar al Carrito
-                                                    <i class="material-icons right">shopping_cart</i>
-                                                </a>
-                                            </footer>
                                         </div>
+                                        <footer class="card-action center BottonContainer">
+                                            <a href="#" class="btn center ADDCar">Agregar a lista
+                                            </a>
+                                        </footer>
                                     </div>
                                 </article>
                             </div>
 
                             <section class="row">
-                                <article class="col s12 m4">
+                                <article class="col s12 m6 l4">
                                     <div class="card BodyCard">
                                         <div class="card-image">
                                             <img class="ImgCard" src="/SRC/Imagenes/Imagenes-Productos/Lentes.jpg"
                                                 alt="Lentes Oakley para ciclismo negros con tonos naranja/Rojos">
                                         </div>
-                                        <div class="card-content adios" style="padding: 14px;">
+                                        <div class="card-content IndividualProductContainer">
                                             <h5 class="card-title">Lentes Oakley</h5>
 
                                             <div class="valign-wrapper">
@@ -244,23 +254,22 @@
 
                                             </div>
                                             <p class="blue-text text-darken-4"
-                                                style="font-weight: bold; margin-top: 13px;">₡95,000</p>
-                                            <footer class="card-action center" style="padding-bottom: 5px;">
-                                                <a href="#" class="btn black white-text center">Agregar al Carrito
-                                                    <i class="material-icons right">shopping_cart</i>
-                                                </a>
-                                            </footer>
+                                                style="font-weight: bold; margin-top: 13px;">₡95,000</p>                                        
                                         </div>
+                                        <footer class="card-action center BottonContainer" >
+                                            <a href="#" class="btn center ADDCar">Agregar a lista
+                                            </a>
+                                        </footer>
                                     </div>
                                 </article>
 
-                                <article class="col s12 m4">
+                                <article class="col s12 m6 l4">
                                     <div class="card BodyCard">
                                         <div class="card-image">
                                             <img class="ImgCard" src="/SRC/Imagenes/Imagenes-Productos/llantaMaxis.webp"
                                                 alt="Llantas maxis color negras">
                                         </div>
-                                        <div class="card-content adios" style="padding: 14px;">
+                                        <div class="card-content IndividualProductContainer">
                                             <h5 class="card-title">Llantas Maxis</h5>
 
                                             <div class="valign-wrapper">
@@ -275,24 +284,24 @@
                                             </div>
                                             <p class="blue-text text-darken-4"
                                                 style="font-weight: bold; margin-top: 13px;">₡45,000</p>
-                                            <footer class="card-action center" style="padding-bottom: 5px;">
-                                                <a href="#" class="btn black white-text center">Agregar al Carrito
-                                                    <i class="material-icons right">shopping_cart</i>
-                                                </a>
-                                            </footer>
                                         </div>
+                                        <footer class="card-action center BottonContainer">
+                                            <a href="#" class="btn center ADDCar">Agregar a lista
+                                            </a>
+                                        </footer>
                                     </div>
                                 </article>
 
-                                <article class="col s12 m4">
+                                <article class="col s12 m6 l4">
                                     <div class="card BodyCard">
                                         <div class="card-image">
-                                            <figure>
-                                                <img class="ImgCard" src="/SRC/Imagenes/Imagenes-Productos/Uniforme.avif"
-                                                alt="Uniforme Pro color negro con detalles en negro y marca en blanco">
-                                            </figure>                                           
+                                            <div>
+                                                <img class="ImgCard"
+                                                    src="/SRC/Imagenes/Imagenes-Productos/Uniforme.avif"
+                                                    alt="Uniforme Pro color negro con detalles en negro y marca en blanco">
+                                            </div>
                                         </div>
-                                        <div class="card-content adios" style="padding: 14px;">
+                                        <div class="card-content IndividualProductContainer">
                                             <h5 class="card-title">Uniforme Pro Team</h5>
 
                                             <div class="valign-wrapper">
@@ -307,21 +316,212 @@
                                             </div>
                                             <p class="blue-text text-darken-4"
                                                 style="font-weight: bold; margin-top: 13px;">₡100,000</p>
-                                            <footer class="card-action center" style="padding-bottom: 5px;">
-                                                <a href="#" class="btn black white-text center">Agregar al Carrito
-                                                    <i class="material-icons right">shopping_cart</i>
-                                                </a>
-                                            </footer>
                                         </div>
+                                        <footer class="card-action center BottonContainer">
+                                            <a href="#" class="btn center ADDCar">Agregar a lista
+                                            </a>
+                                        </footer>
                                     </div>
                                 </article>
                             </section>
                         </section>
-                        <div id="testDos">Hello piece of shit</div>
-                        <div id="testTres">Bonjour piece of mierda</div>
+                        <section id="testDos">
+                            <div class="row">
+                                <article class="col s12 m6 l4">
+                                    <div class="card BodyCard">
+                                        <div class="card-image">
+                                            <img class="ImgCard"
+                                                src="/SRC/Imagenes/Imagenes-Productos/PuñosH.jpg"
+                                                alt="Puños bicicleta color negro con pleateado">
+                                        </div>
+                                        <div class="card-content IndividualProductContainer">
+                                            <h5 class="card-title">Puños Hydra X</h5>
+
+                                            <div class="valign-wrapper">
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <span class="grey-text text-darken-1"
+                                                    style="margin-left: 10px; font-weight: bold">5.0</span>
+
+                                            </div>
+                                            <p class="blue-text text-darken-4"
+                                                style="font-weight: bold; margin-top: 13px;">₡87,250</p>
+                                        </div>
+                                        <footer class="card-action center BottonContainer">
+                                            <a href="#" class="btn center ADDCar">Agregar a lista
+                                            </a>
+                                        </footer>
+                                    </div>
+                                </article>
+                                <article class="col s12 m6 l4">
+                                    <div class="card BodyCard">
+                                        <div class="card-image">
+                                            <img class="ImgCard"
+                                                src="/SRC/Imagenes/Imagenes-Productos/PedalesS.jpg"
+                                                alt="Pedales gris claro con negro de bicicleta MTB/BMX">
+                                        </div>
+                                        <div class="card-content IndividualProductContainer">
+                                            <h5 class="card-title">Pedales MTB/BMX</h5>
+
+                                            <div class="valign-wrapper">
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star_half</i>
+                                                <span class="grey-text text-darken-1"
+                                                    style="margin-left: 10px; font-weight: bold">4.0</span>
+
+                                            </div>
+                                            <p class="blue-text text-darken-4"
+                                                style="font-weight: bold; margin-top: 13px;">₡45,500</p> 
+                                        </div>
+                                        <footer class="card-action center BottonContainer">
+                                            <a href="#" class="btn center ADDCar">Agregar a lista
+                                            </a>
+                                        </footer>
+                                    </div>
+                                </article>
+
+                                <article class="col s12 m6 l4">
+                                    <div class="card BodyCard">
+                                        <div class="card-image">
+                                            <img class="ImgCard"
+                                                src="/SRC/Imagenes/Imagenes-Productos/Marco.jpg"
+                                                alt="Pedales gris claro con negro de bicicleta MTB/BMX">
+                                        </div>
+                                        <div class="card-content IndividualProductContainer">
+                                            <h5 class="card-title">Marco MTB Downhill</h5>
+
+                                            <div class="valign-wrapper">
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">starf</i>
+                                                <span class="grey-text text-darken-1"
+                                                    style="margin-left: 10px; font-weight: bold">5.0</span>
+
+                                            </div>
+                                            <p class="blue-text text-darken-4"
+                                                style="font-weight: bold; margin-top: 13px;">₡445,500</p>
+                                        </div>
+                                        <footer class="card-action center BottonContainer">
+                                            <a href="#" class="btn center ADDCar">Agregar a lista
+                                            </a>
+                                        </footer>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                        <section id="testTres">
+                            <div class="row">
+                                <article class="col s12 m6 l4">
+                                    <div class="card BodyCard">
+                                        <div class="card-image">
+                                            <img class="ImgCard"
+                                                src="/SRC/Imagenes/Imagenes-Productos/Poteina.webp"
+                                                alt="Puños bicicleta color negro con pleateado">
+                                        </div>
+                                        <div class="card-content IndividualProductContainer">
+                                            <h5 class="card-title">ON Gold Whey Protein</h5>
+
+                                            <div class="valign-wrapper">
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <span class="grey-text text-darken-1"
+                                                    style="margin-left: 10px; font-weight: bold">5.0</span>
+
+                                            </div>
+                                            <p class="blue-text text-darken-4"
+                                                style="font-weight: bold; margin-top: 13px;">₡35,250</p>
+                                        </div>
+                                        
+                                        <footer class="card-action center BottonContainer">
+                                            <a href="#" class="btn center ADDCar">Agregar a lista
+                                            </a>
+                                        </footer>
+                                    </div>
+                                </article>
+
+                                <article class="col s12 m6 l4">
+                                    <div class="card BodyCard">
+                                        <div class="card-image">
+                                            <img class="ImgCard"
+                                                src="/SRC/Imagenes/Imagenes-Productos/Creatina.jpg"
+                                                alt="Puños bicicleta color negro con pleateado">
+                                        </div>
+                                        <div class="card-content IndividualProductContainer">
+                                            <h5 class="card-title">Nutrabio Creatina</h5>
+
+                                            <div class="valign-wrapper">
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star_half</i>
+                                                <span class="grey-text text-darken-1"
+                                                    style="margin-left: 10px; font-weight: bold">4.3</span>
+
+                                            </div>
+                                            <p class="blue-text text-darken-4"
+                                                style="font-weight: bold; margin-top: 13px;">₡30,700</p>
+                                        </div>
+                                        
+                                        <footer class="card-action center BottonContainer">
+                                            <a href="#" class="btn center ADDCar">Agregar a lista
+                                            </a>
+                                        </footer>
+                                    </div>
+                                </article>
+
+                                <article class="col s12 m6 l4">
+                                    <div class="card BodyCard">
+                                        <div class="card-image">
+                                            <img class="ImgCard"
+                                                src="/SRC/Imagenes/Imagenes-Productos/newBars.webp"
+                                                alt="Puños bicicleta color negro con pleateado">
+                                        </div>
+                                        <div class="card-content IndividualProductContainer">
+                                            <h5 class="card-title">Barras Proteina ON</h5>
+
+                                            <div class="valign-wrapper">
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                <span class="grey-text text-darken-1"
+                                                    style="margin-left: 10px; font-weight: bold">4.9</span>
+
+                                            </div>
+                                            <p class="blue-text text-darken-4"
+                                                style="font-weight: bold; margin-top: 13px;">₡17,250</p>
+                                        </div>
+                                        
+                                        <footer class="card-action center BottonContainer">
+                                            <a href="#" class="btn center ADDCar">Agregar a lista
+
+                                            </a>
+                                        </footer>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>                      
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="BotonUP">
+            <a href="#TabTitle" class="btn-floating black ">
+                <i class="material-icons">arrow_upward</i>
+            </a>
         </div>
 
     </main>

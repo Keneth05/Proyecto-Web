@@ -3,6 +3,9 @@
     --ColorMenu: #004c70;
     --ColorLetras: aliceblue;
 }
+.Header{
+    padding: 0 30px;
+}
 .logo-img {
     display: flex;
     justify-content: center;

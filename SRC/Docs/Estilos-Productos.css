@@ -2,7 +2,97 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+
     justify-content: center;
+}
+
+.image-container {
+    width: 100%;
+}
+
+.BodyCard {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.ADDCar {
+    background-color: black;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.BodyCard:hover .ADDCar {
+    background-color: #3277c5;
+}
+
+.BodyCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tabs .tab a {
+    color: #004c70;
+}
+
+.tabs .tab a.active {
+    background-color: transparent !important;
+    color: #004c70;
+}
+
+.tabs .tab a:hover {
+    background-color: none;
+    color: #004c70;
+}
+
+.tabs .indicator {
+    background-color: #000000;
+}
+
+.BCatalogo {
+    border-radius: 1.5rem;
+    width: 300px;
+    background-color: aliceblue;
+    color: black;
+}
+
+.white-text.slogan {
+    font-size: 32px;
+}
+
+.BotonUP {
+    position: sticky;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    transition: opacity 0.5s ease;
+    margin-bottom: 30px;
+}
+
+.BotonUP.hidden {
+    opacity: 0;
+    pointer-events: none; 
+}
+
+.Welcome {
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.041);
+    padding-bottom: 40px 25px;
+}
+
+.image-background {
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(85%);
+}
+
+.BCatalogo:hover {
+    background-color: #0482bd;
+    color: aliceblue;
+
 }
 
 .ImgCard {
@@ -10,16 +100,22 @@ main {
     object-fit: contain;
 }
 
-.BodyCard {
-    height: 400px;
+.BottonContainer {
+    margin-bottom: 30px;
 }
 
-.ProductsContainer{
+.IndividualProductContainer {
+    text-align: left;
+}
+
+.ProductsContainer {
     background-color: #f5f5f5;
 }
-.tabsContainer{
+
+.tabsContainer {
     background-color: #f5f5f5;
 }
+
 * {
     font-family: "Montserrat", serif;
 }
@@ -80,6 +176,13 @@ main {
     transform: perspective(220px) rotateY(-0.5deg);
 }
 
+.GeneralContainer {
+    display: flex;
+    width: 100%;
+}
+
+
+
 @keyframes slide {
     0% {
         margin-left: 0;
@@ -116,25 +219,13 @@ main {
 
 @media (min-width:990px) {
 
-    .Principal-Image {
-        width: 100%;
-        height: 30vh;
-    }
-
-    .image_text {
-        bottom: 75%;
-
-    }
-
     .carrusel-box {
         width: 1000px;
         height: 600px;
-
     }
 
     .descripcion {
-
-        font-size: 30px;
+        font-size: 50px;
     }
 
     .carrusel-img {
@@ -145,5 +236,13 @@ main {
     .carrusel-img:hover {
         transform: scale(1.02);
         filter: drop-shadow(0.2rem 0.2rem 0.5rem rgb(70, 69, 69));
+    }
+
+    .ADDCar {
+        width: 80%;
+    }
+
+    .BotonUP {
+        display: none;
     }
 }
