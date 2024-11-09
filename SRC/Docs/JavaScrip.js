@@ -12,29 +12,10 @@ function toggleDescription(event) {
     }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const faqs = document.querySelectorAll(".faq");
-
-    faqs.forEach((faq) => {
-        faq.addEventListener("click", () => {
-            faq.classList.toggle("active");
-
-            const answer = faq.querySelector(".Question-answer");
-            if (faq.classList.contains("active")) {
-                answer.style.maxHeight = answer.scrollHeight + "px";
-            } else {
-                answer.style.maxHeight = 0;
-            }
-        });
-    });
-});
-
 document.addEventListener('DOMContentLoaded', function() {
-    // Inicializar el sidenav
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems,{edge:'right'});
 
-    // Cerrar el sidenav al hacer clic en el icono de "X"
     document.querySelector('.close-sidenav').addEventListener('click', function(event) {
         event.preventDefault();
         var instance = M.Sidenav.getInstance(document.querySelector('.sidenav'));

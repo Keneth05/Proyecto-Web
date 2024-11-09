@@ -7,8 +7,83 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #f5f4f4;
+}
+form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.FAQ{
+    margin-top: 20px;
+}
+.tabsContainer{
+    margin-bottom: 20px;
+}
+form fieldset .input-field {
+    margin: 0;
+}
+.BCatalogo{
+    width: 300px;
+}
+.General{
+    margin-top: 40px;
+}
+.image-container {
+    width: 100%;
+}
+.white-text.slogan {
+    font-size: 32px;
+}
+.image-background {
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(60%);
 }
 
+.Welcome {
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.041);
+    padding-bottom: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.ContactTitle{
+    font-weight: 550;
+}
+.tabs .tab a {
+    color: #013147;
+}
+
+.tabs .tab a.active {
+    background-color: transparent !important;
+    color: #004c70;
+}
+
+.tabs .tab a:hover {
+    background-color: none;
+    color: #004c70;
+}
+
+.tabs .indicator {
+    background-color: #000000;
+}
+.btn{
+    border-radius: 1.5rem;
+    background-color: rgb(58, 58, 58);
+    margin-top: 20px;
+}
+.BSend{
+    margin-top: 0px;
+}
+.ContactPanel{
+    padding-bottom: 7px;
+    padding-top: 15px;
+}
 .image_text {
     text-align: center;
     position: absolute;
@@ -17,53 +92,16 @@ main {
     bottom: 80%;
     width: 100%;
 }
-
-.info-page {
-    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.164);
-    border-radius: 1em;
-    margin: 4% 2%;
-    padding: 6% 5%;
-    width: 100%;
+.UbicationContainer{
+    height: 40vh;
 }
-
-.container {
+.infocontainer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 15px;
 }
-
-.contact-item {
-    display: flex;
-    margin-top: 6%;
-    gap: 5px;
-}
-
-.Icon-contact {
-    width: 24px;
-    height: 2%;
-    margin-right: 3%;
-}
-
-.text {
-    display: flex;
-    justify-content: center;
-}
-
-.info {
-    margin: 0;
-}
-
-.tittle {
-    margin-top: 0%;
-    text-align: center;
-    font-size: 22px;
-    font-weight: 600;
-}
-
 .faq {
-    max-width: 700px;
+    max-width: 100%;
     margin-top: 2rem;
     border-bottom: 1.5px solid #000000;
     cursor: pointer;
@@ -104,7 +142,7 @@ main {
 
 .ExactUbication{
     width: 100%;
-    height: 334px;
+    height: 100%;
 }
 
 .page-Schedule{
@@ -113,18 +151,6 @@ main {
 .info-page--questions{
     box-shadow: none;
 }
-.info{
-    text-decoration: none;
-}
-
-.FactoryContactInfo{
-    margin-top: 55px;
-    font-size: 40px;
-    font-weight: 600;
-}
-
-
-
 
 @keyframes arrow{
     from{
@@ -138,26 +164,6 @@ main {
 }
 
 @media (min-width:990px){
-    .container{
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 2%;
-        margin: 10px 0 30px 0;
-        max-width: 80%;
-    }
-    .info-page{
-        padding: 25px;
-        margin: 0;
-    }
-    .info-page--Ubication{
-        width: 40%;
-        height: 425px;
-    }
-    .info-page--contactInfo{
-        width: 40%;
-        height: 425px;
-    }
     .info-page--questions{
         margin-top: 4%;
         padding: 2%;
