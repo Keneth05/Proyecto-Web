@@ -3,6 +3,13 @@
     --ColorMenu: #004c70;
     --ColorLetras: aliceblue;
 }
+.nav-wrapper .active a {
+    text-decoration: underline; 
+    color: rgb(231, 231, 231);
+    font-weight: bold;
+    scale: 1.2;
+}
+
 .Header{
     padding: 0 30px;
 }

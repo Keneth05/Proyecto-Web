@@ -1,28 +1,63 @@
 
-.image_text {
+main {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    position: absolute;
-    color: var(--ColorLetras);
-    backdrop-filter: blur(1px);
-    bottom: 80%;
+    align-items: center;
+    justify-content: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+* {
+    font-family: "Montserrat", serif;
+}
+.individualPerson{
+    margin-right: 0px;
+}
+.ImportantInfo{
+    margin-top: 0px;
+}
+.BSeeHistory{
+    border-radius: 1.5rem;
+    width: 300px;
+    background-color: aliceblue;
+    color: black;
+}
+.historyContainer{
+    background-color: #3277c5;
+    color: aliceblue;
     width: 100%;
+}
+.generalInfo{
+    margin-top: 40px;
+}
+.image-container {
+    width: 100%;
+}
+
+.Welcome {
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.041);
+    padding-bottom: 40px 25px;
+}
+
+.image-background {
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(85%);
+}
+.ImgCard {
+    height: 220px;
+    object-fit:cover;
 }
 
 .Photo {
     width: 150px;
     height: 150px;
-}
-
-.sidenav {
-    z-index: 1000;
-}
-
-.custom-radius{
-    border-radius: 1rem;
-
-}
-* {
-    font-family: "Montserrat", serif;
 }
 
 .AboutInfo{
@@ -41,10 +76,6 @@
 
     .equal-height:nth-of-type(3) {
         height: 100px;
-    }
-
-    .col.s12.l5 {
-        width: 50%;
     }
 
     .col.s12.l5:nth-of-type(2) {

@@ -1,15 +1,25 @@
-function toggleDescription(event) {
-
-    const wrapper = event.target.closest('.individual-service').querySelector('.img-information');
-
-    wrapper.classList.toggle('show-description');
-    
-    const button = event.target;
-    if (wrapper.classList.contains('show-description')) {
-        button.textContent = "Ver Menos";
-    } else {
-        button.textContent = "Ver Más"; 
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll(".nav-wrapper ul li a");
+    const currentURL = window.location.pathname;
+    navLinks.forEach(link => {
+    if (link.getAttribute("href") === currentURL) {
+        link.parentElement.classList.add("active");
     }
+    });
+});
+
+function toggleDescription(id, event) {
+    var description = document.getElementById(id);
+    description.classList.toggle('show');
+    
+
+    if (description.classList.contains('show')) {
+        event.currentTarget.innerHTML = '<i class="material-icons right">arrow_downward</i>Ver menos';
+    } else {
+        event.currentTarget.innerHTML = '<i class="material-icons right">arrow_upward</i>Ver más';
+    }
+
+    event.currentTarget.blur();
 }
 
 document.addEventListener('DOMContentLoaded', function() {
