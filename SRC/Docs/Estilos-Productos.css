@@ -8,6 +8,13 @@ main {
 html {
     scroll-behavior: smooth;
 }
+.Puntuation{
+    color: rgb(105, 105, 105);
+    margin-left: 10px; 
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
 .BicyclesContainer{
     display: flex;
     flex-direction: column;
@@ -77,11 +84,9 @@ html {
     background-color: #000000;
 }
 
-.BCatalogo {
+.BImage {
     border-radius: 1.5rem;
     width: 300px;
-    background-color: aliceblue;
-    color: black;
 }
 
 .white-text.slogan {
@@ -152,44 +157,10 @@ html {
     margin-bottom: 30px;
 }
 
-@keyframes slide {
-    0% {
-        margin-left: 0;
-    }
-
-    20% {
-        margin-left: 0;
-    }
-
-    25% {
-        margin-left: -100%;
-    }
-
-    45% {
-        margin-left: -100%;
-    }
-
-    50% {
-        margin-left: -200%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    75% {
-        margin-left: -300%;
-    }
-
-    100% {
-        margin-left: -300%;
-    }
-}
-
 @media (min-width:990px) {
-
     .ADDCar {
-        width: 80%;
+        width: 90%;
+        font-size: 13px;
     }
 
     .BotonUP {

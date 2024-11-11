@@ -20,10 +20,10 @@
 
 <body>
     <header>
-        <div class="navbar-fixed">
+        <section class="navbar-fixed">
             <nav class="nav-background">
-                <div class="nav-wrapper Header">
-                    <a href="../Paginas/ContactUs.html" class="brand-logo left">
+                <header  class="nav-wrapper Header">
+                    <a href="../Paginas/ContactUs.html" class="brand-logo">
                         <img src="../Imagenes/Imagenes-Principal/processed_image_no_background.png" alt="" class="logo">
                         <span class="logo-text">Osos Bike Shop</span>
                     </a>
@@ -37,9 +37,9 @@
                         <li><a href="/SRC/Paginas/ContactUs.html">Contáctanos</a></li>
                         <li><a href="/SRC/Paginas/Nosotros.html">Nosotros</a></li>
                     </ul>
-                </div>
+                </header>
             </nav>
-        </div>
+        </section>
         <ul class="sidenav" id="mobile-menu">
             <li>
                 <a href="#" class="close-sidenav">
@@ -80,21 +80,22 @@
                 </div>
 
                 <div class="col s12">
-                    <a href="#ProductsTitle" class="btn BCatalogo">Ver Catalogo
+                    <a href="#ProductsTitle" class="btn BImage">Ver Catalogo
                         <i class="material-icons right">directions_bike</i>
                     </a>
                 </div>
             </header>
         </section>
 
-        <div class="container BicyclesContainer">
-            <h4 class="center-align">Bicicletas Premium</h4>
-            <p class="center-align">Descubre nuestra selección de bicicletas de alta gama, diseñadas para los ciclistas
-                más exigentes</p>
-
+        <section class="container BicyclesContainer">
+            <header>
+                <h4 class="center-align">Bicicletas Premium</h4>
+                <p class="center-align">Descubre nuestra selección de bicicletas de alta gama, diseñadas para los ciclistas
+                    más exigentes</p>
+            </header>
             <div class="row">
 
-                <div class="col s12 m4 l4">
+                <article class="col s12 m6 l4">
                     <div class="card BodyCard">
                         <div class="card-image">
                             <img class="ImgCard" src="/SRC/Imagenes/Imagenes-Productos/DohnhillTurquesa.webp" alt="">
@@ -102,7 +103,7 @@
                                 <i class="material-icons yellow-text text-darken-2">star</i>
                             </a>
                         </div>
-                        <div class="card-content PremiumContent">
+                        <section class="card-content PremiumContent">
                             <h5>Canyon Sender</h5>
                             <p class="price">₡4,125,000</p>
                             <ul>
@@ -110,32 +111,11 @@
                                 <li>Ruedas tamaño 29"</li>
                                 <li>Freno Hidraulico</li>
                             </ul>
-                        </div>
+                        </section>
                     </div>
-                </div>
+                </article>
 
-                <div class="col s12 m4 l4">
-                    <div class="card BodyCard">
-                        <div class="card-image">
-                            <img class="ImgCard" src="/SRC/Imagenes/Imagenes-Productos/Downhill beige.webp" alt="">
-                            <a href="" class="halfway-fab btn-floating black ">
-                                <i class="material-icons yellow-text text-darken-2">star</i>
-                            </a>
-                        </div>
-                        <div class="card-content PremiumContent">
-                            <h5>Santa Cruz</h5>
-                            <p class="price">₡1,925,000</p>
-                            <ul>
-                                <li>Marco de Aluminio</li>
-                                <li>Doble Suspencion</li>
-                                <li>Transmión para descenso</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col s12 m4 l4">
+                <article class="col s12 m6 l4">
                     <div class="card BodyCard">
                         <div class="card-image">
                             <img class="ImgCard" src="/SRC/Imagenes/Imagenes-Productos/DownhillNegra.webp" alt="">
@@ -143,7 +123,7 @@
                                 <i class="material-icons yellow-text text-darken-2">star</i>
                             </a>
                         </div>
-                        <div class="card-content PremiumContent">
+                        <section class="card-content PremiumContent">
                             <h5>Canyon Sender</h5>
                             <p class="price">₡2,750,000</p>
                             <ul>
@@ -151,12 +131,32 @@
                                 <li>Frenos Hidraulico</li>
                                 <li>Llantas 29</li>
                             </ul>
-                        </div>
+                        </section>
                     </div>
-                </div>
+                </article>
+
+                <article class="col s12 m12 l4">
+                    <div class="card BodyCard">
+                        <div class="card-image">
+                            <img class="ImgCard" src="/SRC/Imagenes/Imagenes-Productos/Downhill beige.webp" alt="">
+                            <a href="" class="halfway-fab btn-floating black ">
+                                <i class="material-icons yellow-text text-darken-2">star</i>
+                            </a>
+                        </div>
+                        <section  class="card-content PremiumContent">
+                            <h5>Santa Cruz</h5>
+                            <p class="price">₡1,925,000</p>
+                            <ul>
+                                <li>Marco de Aluminio</li>
+                                <li>Doble Suspencion</li>
+                                <li>Transmión para descenso</li>
+                            </ul>
+                        </section >
+                    </div>
+                </article>
 
             </div>
-        </div>
+        </section>
         <section class="ContainerTodo">
             <div class=" GeneralContainer">
                 <h5 id="ProductsTitle">Productos Destacados</h5>
@@ -184,14 +184,13 @@
                                         <i class="material-icons yellow-text text-darken-2">star</i>
                                         <i class="material-icons yellow-text text-darken-2">star</i>
                                         <i class="material-icons yellow-text text-darken-2">star_half</i>
-                                        <span class="grey-text text-darken-1"
-                                            style="margin-left: 10px; font-weight: bold">4.8</span>
+                                        <h6 class="Puntuation">4.8</h6>
                                     </div>
-                                    <p class="price">
-                                        ₡450,000</p>
+                                    <p class="price">₡450,000</p>
                                 </div>
                                 <footer class="card-action center BottonContainer">
                                     <a href="#" class="btn center ADDCar">Agregar a lista
+                                        <i class="material-icons right">shopping_cart</i>
                                     </a>
                                 </footer>
                             </div>
@@ -212,15 +211,14 @@
                                         <i class="material-icons yellow-text text-darken-2">star_rate</i>
                                         <i class="material-icons yellow-text text-darken-2">star_rate</i>
                                         <i class="material-icons yellow-text text-darken-2">star_rate</i>
-                                        <span class="grey-text text-darken-1"
-                                            style="margin-left: 10px; font-weight: bold">5.0</span>
+                                        <h6 class="Puntuation">5.0</h6>
 
                                     </div>
-                                    <p class="price">
-                                        ₡175,000</p>
+                                    <p class="price">₡175,000</p>
                                 </div>
                                 <footer class="card-action center BottonContainer">
                                     <a href="#" class="btn center ADDCar">Agregar a lista
+                                        <i class="material-icons right">shopping_cart</i>
                                     </a>
                                 </footer>
                             </div>
@@ -241,15 +239,14 @@
                                         <i class="material-icons yellow-text text-darken-2">star_rate</i>
                                         <i class="material-icons yellow-text text-darken-2">star_rate</i>
                                         <i class="material-icons yellow-text text-darken-2">star_half</i>
-                                        <span class="grey-text text-darken-1"
-                                            style="margin-left: 10px; font-weight: bold">4.5</span>
+                                        <h6 class="Puntuation">4.5</h6>
 
                                     </div>
-                                    <p class="price">
-                                        ₡125,000</p>
+                                    <p class="price">₡125,000</p>
                                 </div>
                                 <footer class="card-action center BottonContainer">
                                     <a href="#" class="btn center ADDCar">Agregar a lista
+                                        <i class="material-icons right">shopping_cart</i>
                                     </a>
                                 </footer>
                             </div>
@@ -270,15 +267,14 @@
                                             <i class="material-icons yellow-text text-darken-2">star_rate</i>
                                             <i class="material-icons yellow-text text-darken-2">star_rate</i>
                                             <i class="material-icons yellow-text text-darken-2">star_rate</i>
-                                            <span class="grey-text text-darken-1"
-                                                style="margin-left: 10px; font-weight: bold">4.9</span>
+                                            <h6 class="Puntuation">4.9</h6>
     
                                         </div>
-                                        <p class="price">
-                                            ₡95,000</p>
+                                        <p class="price">₡95,000</p>
                                     </div>
                                     <footer class="card-action center BottonContainer">
                                         <a href="#" class="btn center ADDCar">Agregar a lista
+                                            <i class="material-icons right">shopping_cart</i>
                                         </a>
                                     </footer>
                                 </div>
@@ -299,15 +295,14 @@
                                             <i class="material-icons yellow-text text-darken-2">star_rate</i>
                                             <i class="material-icons yellow-text text-darken-2">star_rate</i>
                                             <i class="material-icons yellow-text text-darken-2">star_half</i>
-                                            <span class="grey-text text-darken-1"
-                                                style="margin-left: 10px; font-weight: bold">4.0</span>
+                                            <h6 class="Puntuation">4.0</h6>
     
                                         </div>
-                                        <p class="price">
-                                            ₡45,000</p>
+                                        <p class="price">45,000</p>
                                     </div>
                                     <footer class="card-action center BottonContainer">
                                         <a href="#" class="btn center ADDCar">Agregar a lista
+                                            <i class="material-icons right">shopping_cart</i>
                                         </a>
                                     </footer>
                                 </div>
@@ -330,15 +325,14 @@
                                             <i class="material-icons yellow-text text-darken-2">star_rate</i>
                                             <i class="material-icons yellow-text text-darken-2">star_rate</i>
                                             <i class="material-icons yellow-text text-darken-2">star_half</i>
-                                            <span class="grey-text text-darken-1"
-                                                style="margin-left: 10px; font-weight: bold">4.7</span>
+                                            <h6 class="Puntuation">4.7</h6>
     
                                         </div>
-                                        <p class="price">
-                                            ₡100,000</p>
+                                        <p class="price">₡100,000</p>
                                     </div>
                                     <footer class="card-action center BottonContainer">
                                         <a href="#" class="btn center ADDCar">Agregar a lista
+                                            <i class="material-icons right">shopping_cart</i>
                                         </a>
                                     </footer>
                                 </div>
@@ -364,15 +358,14 @@
                                         <i class="material-icons yellow-text text-darken-2">star</i>
                                         <i class="material-icons yellow-text text-darken-2">star</i>
                                         <i class="material-icons yellow-text text-darken-2">star</i>
-                                        <span class="grey-text text-darken-1"
-                                            style="margin-left: 10px; font-weight: bold">5.0</span>
+                                        <h6 class="Puntuation">5.0</h6>
 
                                     </div>
-                                    <p class="price">
-                                        ₡87,250</p>
+                                    <p class="price">₡87,250</p>
                                 </div>
                                 <footer class="card-action center BottonContainer">
                                     <a href="#" class="btn center ADDCar">Agregar a lista
+                                        <i class="material-icons right">shopping_cart</i>
                                     </a>
                                 </footer>
                             </div>
@@ -392,15 +385,14 @@
                                         <i class="material-icons yellow-text text-darken-2">star</i>
                                         <i class="material-icons yellow-text text-darken-2">star</i>
                                         <i class="material-icons yellow-text text-darken-2">star_half</i>
-                                        <span class="grey-text text-darken-1"
-                                            style="margin-left: 10px; font-weight: bold">4.0</span>
+                                        <h6 class="Puntuation">4.0</h6>
 
                                     </div>
-                                    <p class="price">
-                                        ₡45,500</p>
+                                    <p class="price">₡45,500</p>
                                 </div>
                                 <footer class="card-action center BottonContainer">
                                     <a href="#" class="btn center ADDCar">Agregar a lista
+                                        <i class="material-icons right">shopping_cart</i>
                                     </a>
                                 </footer>
                             </div>
@@ -421,15 +413,14 @@
                                         <i class="material-icons yellow-text text-darken-2">star</i>
                                         <i class="material-icons yellow-text text-darken-2">star</i>
                                         <i class="material-icons yellow-text text-darken-2">starf</i>
-                                        <span class="grey-text text-darken-1"
-                                            style="margin-left: 10px; font-weight: bold">5.0</span>
+                                        <h6 class="Puntuation">5.0</h6>
 
                                     </div>
-                                    <p class="price">
-                                        ₡445,500</p>
+                                    <p class="price">₡445,500</p>
                                 </div>
                                 <footer class="card-action center BottonContainer">
                                     <a href="#" class="btn center ADDCar">Agregar a lista
+                                        <i class="material-icons right">shopping_cart</i>
                                     </a>
                                 </footer>
                             </div>
@@ -453,16 +444,15 @@
                                         <i class="material-icons yellow-text text-darken-2">star</i>
                                         <i class="material-icons yellow-text text-darken-2">star</i>
                                         <i class="material-icons yellow-text text-darken-2">star</i>
-                                        <span class="grey-text text-darken-1"
-                                            style="margin-left: 10px; font-weight: bold">5.0</span>
+                                        <h6 class="Puntuation">5.0</h6>
 
                                     </div>
-                                    <p class="price">
-                                        ₡35,250</p>
+                                    <p class="price">₡35,250</p>
                                 </div>
 
                                 <footer class="card-action center BottonContainer">
                                     <a href="#" class="btn center ADDCar">Agregar a lista
+                                        <i class="material-icons right">shopping_cart</i>
                                     </a>
                                 </footer>
                             </div>
@@ -483,16 +473,15 @@
                                         <i class="material-icons yellow-text text-darken-2">star</i>
                                         <i class="material-icons yellow-text text-darken-2">star</i>
                                         <i class="material-icons yellow-text text-darken-2">star_half</i>
-                                        <span class="grey-text text-darken-1"
-                                            style="margin-left: 10px; font-weight: bold">4.3</span>
+                                        <h6 class="Puntuation">4.3</h6>
 
                                     </div>
-                                    <p class="price">
-                                        ₡30,700</p>
+                                    <p class="price">₡30,700</p>
                                 </div>
 
                                 <footer class="card-action center BottonContainer">
-                                    <a href="#" class="btn center ADDCar">Agregar a lista
+                                    <a href="#" class="btn  ADDCar">Agregar a lista
+                                        <i class="material-icons right">shopping_cart</i>
                                     </a>
                                 </footer>
                             </div>
@@ -513,17 +502,15 @@
                                         <i class="material-icons yellow-text text-darken-2">star</i>
                                         <i class="material-icons yellow-text text-darken-2">star</i>
                                         <i class="material-icons yellow-text text-darken-2">star</i>
-                                        <span class="grey-text text-darken-1"
-                                            style="margin-left: 10px; font-weight: bold">4.9</span>
+                                        <h6 class="Puntuation">4.9</h6>
 
                                     </div>
-                                    <p class="price">
-                                        ₡17,250</p>
+                                    <p class="price">₡17,250</p>
                                 </div>
 
-                                <footer class="card-action center BottonContainer">
-                                    <a href="#" class="btn center ADDCar">Agregar a lista
-
+                                <footer class="card-action BottonContainer">
+                                    <a href="#" class="btn ADDCar">Agregar a lista
+                                        <i class="material-icons right">shopping_cart</i>
                                     </a>
                                 </footer>
                             </div>
@@ -539,91 +526,78 @@
         </div>
     </main>
 
-    <footer class="page-footer">
-
-        <div class="page-footer__info">
-            <article class="footer-info footer-info--contact">
-                <div class="titleandBicycle">
+    <footer class="footer">
+        <div class="footer__info">
+            <section class="footer__section footer__section--contact">
+                <div class="footer__title-bicycle">
                     <img src="/SRC/Imagenes/Imagenes-Principal/bicicleta.png" alt="Icono de persona en bicicleta"
-                        class="footer-Icon">
-                    <div class="factory-name">
-                        <h3 class="Ftitle Ftitle--name">Osos Bike Shop</h3>
+                        class="footer__icon">
+                    <div class="footer__factory-name">
+                        <h3 class="footer__title footer__title--name">Osos Bike Shop</h3>
                     </div>
                 </div>
 
-                <div class="footer-description">
-                    <p class="info-text info-text--factory-descripcion">Tu tienda de confianza para todo lo relacionado
-                        con
-                        bicicletas.
-                        Ofrecemos productos de calidad y servicio exepcional
-                    </p>
+                <div class="footer__description">
+                    <p class="footer__text footer__text--description">Tu tienda de confianza para todo lo relacionado
+                        con bicicletas. Ofrecemos productos de calidad y servicio excepcional.</p>
                 </div>
-                <div class="social-media">
+
+                <div class="footer__social-media">
                     <a href="https://www.facebook.com/share/ZbFzsdYR76BZMV1v/?mibextid=kFxxJD">
-                        <img class="footer-Icon footer-Icon--facebook"
-                            src="/SRC/Imagenes/Imagenes-Footer/facebook (3).png" alt="Logo de red social Facebook">
+                        <img class="footer__icon footer__icon--facebook"
+                            src="/SRC/Imagenes/Imagenes-Footer/facebook (3).png" alt="Logo de Facebook">
                     </a>
-
                     <a href="https://www.instagram.com/ososbikeshop?igsh=MTM0dXVjdTFoNnBuNA%3D%3D&utm_source=qr">
-                        <img class="footer-Icon footer-Icon--instagram"
-                            src="/SRC/Imagenes/Imagenes-Footer/logotipo-de-instagram (1).png"
-                            alt="Logo de red social Instagram">
+                        <img class="footer__icon footer__icon--instagram"
+                            src="/SRC/Imagenes/Imagenes-Footer/logotipo-de-instagram (1).png" alt="Logo de Instagram">
                     </a>
-
-                    <a href="Mailto:Ososbikes@gmail.com">
-                        <img class="footer-Icon footer-Icon--Gmail" src="/SRC/Imagenes/Imagenes-Footer/gmail (2).png"
+                    <a href="mailto:Ososbikes@gmail.com">
+                        <img class="footer__icon footer__icon--gmail" src="/SRC/Imagenes/Imagenes-Footer/gmail (2).png"
                             alt="Logo de Gmail">
                     </a>
                 </div>
-            </article>
-            <article class="footer-info footer-info--pages-links">
-                <h3 class="Ftitle Ftitle--links">Enlaces Rápidos</h3>
-                <ul class="LinksContainer">
-                    <li class="footer-Links"><a href="/SRC/Paginas/Principal.html">Principal</a></li>
-                    <li class="footer-Links"><a href="/SRC/Paginas/Productos.html">Productos</a></li>
-                    <li class="footer-Links"><a href="/SRC/Paginas/Services.html">Servicios</a></li>
-                    <li class="footer-Links"><a href="/SRC/Paginas/ContactUs.html">Contáctanos</a></li>
-                    <li class="footer-Links"><a href="/SRC/Paginas/Nosotros.html">Nosotros</a></li>
+            </section>
+
+            <section class="footer__section footer__section--links">
+                <h3 class="footer__title footer__title--links">Enlaces Rápidos</h3>
+                <ul class="footer__links-container">
+                    <li class="footer__link"><a href="/SRC/Paginas/Principal.html">Principal</a></li>
+                    <li class="footer__link"><a href="/SRC/Paginas/Productos.html">Productos</a></li>
+                    <li class="footer__link"><a href="/SRC/Paginas/Services.html">Servicios</a></li>
+                    <li class="footer__link"><a href="/SRC/Paginas/ContactUs.html">Contáctanos</a></li>
+                    <li class="footer__link"><a href="/SRC/Paginas/Nosotros.html">Nosotros</a></li>
                 </ul>
-            </article>
-            <article class="footer-info footer-info--contact-info">
-                <h3 class="Ftitle Ftitle--Contact">Contacto</h3>
-                <div class="contact-info-item">
-                    <img src="/SRC/Imagenes/Imagenes-Footer/marcador-de-posicion (1).png"
-                        alt="Icono para simular la ubicacion del lugar" class="footer-Icon">
-                    <div class="text">
-                        <p class="info-text">50 m este de CONCREPAL, Buenos Aires, Palmares, Alajuela.</p>
-                    </div>
-                </div>
+            </section>
 
-                <div class="contact-info-item">
-                    <img src="/SRC/Imagenes/Imagenes-Footer/telefono (2).png"
-                        alt="Icono para simular el telefono de la empresa" class="footer-Icon">
-                    <div class="text">
-                        <p class="info-text">8457-2016</p>
+            <section class="footer__section footer__section--contact-info">
+                <h3 class="footer__title footer__title--contact">Contacto</h3>
+                <address>
+                    <div class="footer__contact-item">
+                        <img src="/SRC/Imagenes/Imagenes-Footer/marcador-de-posicion (1).png" alt="Ubicación"
+                            class="footer__icon">
+                        <p class="footer__text">50 m este de CONCREPAL, Buenos Aires, Palmares.</p>
                     </div>
-                </div>
 
-                <div class="contact-info-item">
-                    <img src="/SRC/Imagenes/Imagenes-Footer/gmail (3).png"
-                        alt="Icono para simular el Gmail de la empresa" class="footer-Icon">
-                    <div class="text">
-                        <a class="info-text" href="mailto:Ososbikes@gmail.com">Ososbikes@gmail.com</a>
+                    <div class="footer__contact-item">
+                        <img src="/SRC/Imagenes/Imagenes-Footer/telefono (2).png" alt="Teléfono" class="footer__icon">
+                        <p class="footer__text">8457-2016</p>
                     </div>
-                </div>
-            </article>
+
+                    <div class="footer__contact-item">
+                        <img src="/SRC/Imagenes/Imagenes-Footer/gmail (3).png" alt="Correo electrónico"
+                            class="footer__icon">
+                        <a class="footer__text" href="mailto:Ososbikes@gmail.com">Ososbikes@gmail.com</a>
+                    </div>
+                </address>
+            </section>
         </div>
         <hr>
-        <div class="conditions">
-            <p class="info-text info-text--conditions">2024 Osos Bike Shop todos los derechos reservados</p>
+        <div class="footer__conditions">
+            <p class="footer__text footer__text--conditions">2024 Osos Bike Shop todos los derechos reservados</p>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>  document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.slider');
-            var instances = M.Slider.init(elems);
-        });</script>
-    <script src="/SRC/Docs/JavaScrip.js"></script>
+    <script src="/SRC/Docs/General.js"></script>
 </body>
 
 </html>

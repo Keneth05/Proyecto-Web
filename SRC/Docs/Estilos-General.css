@@ -3,42 +3,43 @@
     --ColorMenu: #004c70;
     --ColorLetras: aliceblue;
 }
+.image-container {
+    width: 100%;
+}
+
+.Welcome {
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.041);
+    padding-bottom: 40px 25px;
+}
+
+.image-background {
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(85%);
+}
+.BImage{
+    background-color: aliceblue;
+    color: black;
+}
+.BImage:hover{
+    background-color: var(--ColorHeader);
+    color: aliceblue;
+}
 .nav-wrapper .active a {
     text-decoration: underline; 
     color: rgb(231, 231, 231);
     font-weight: bold;
     scale: 1.2;
 }
-
+nav ul li a:hover {
+    background-color: transparent;
+}
 .Header{
     padding: 0 30px;
-}
-.logo-img {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-}
-.Principal-Image {
-    width: 100%;
-    height: 30vh;
-    filter: brightness(35%);
-    object-fit: cover;
-}
-.Menu-Logo {
-    margin-right: 35px;
-    width: 200px;
-    filter: invert(1);
-    filter: invert(1) brightness(1000%) contrast(100%);
-}
-
-.nav__things {
-    display: flex;
-    align-items: center;
-    width: 70%;
-}
-
-.title {
-    font-size: 24px;
 }
 .logo-text{
     font-size: 20px;
@@ -60,24 +61,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
-
-.navLinks {
-    position: fixed;
-    width: 60%;
-    height: 100vh;
-    background-color: #004c70e3;
-    top: 7%;
-    right: -113%;
-    transition: ease-in-out .3s;
-}
-
-.list {
-    display: flex;
-    margin: 50px 0;
-    line-height: 20px;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .nav-background {
@@ -119,110 +102,110 @@
     font-size: 20px;
 }
 
-.page-footer {
+
+
+.footer {
     background-color: var(--ColorMenu);
     padding: 14px 10px;
 }
-
-.footer-Icon {
+.footer__section {
+    padding: 10px 20px 20px 20px;
+}
+.footer__icon{
     justify-content: space-between;
     width: 25px;
     height: 25px;
     transition: all ease-in-out 300ms;
 }
-.footer-Icon:hover {
+.footer__icon:hover {
     transform: scale(1.2);
 }
 
-.titleandBicycle {
+.footer__title-bicycle {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.Ftitle--name {
+.footer__title--name{
     margin-left: 15px;
     margin-bottom: 10px;
     justify-content: space-between;
 }
 
-.social-media {
+.footer__social-media{
     width: 60%;
     display: flex;
     justify-content: space-between;
 
 }
 
-.conditions {
+.footer__conditions {
     display: flex;
     text-align: center;
 }
 
-.footer-info {
-    padding: 10px 20px 20px 20px;
-}
-
-
-.MenuDarkView {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.822);
-    z-index: 1;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-}
-
-.contact-info-item {
+.footer__contact-item{
     display: flex;
     align-items: center;
 }
 
-.info-text {
+.footer__text{
     margin-left: 15px;
     width: 100%;
     color: var(--ColorLetras);
     margin-top: 10px;
 }
-
-.MenuDarkView.active {
-    opacity: 1;
-    pointer-events: auto;
+.link:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 250ms;
+    color: rgb(10, 0, 0);
+    text-decoration: underline;
 }
-
-.Ftitle,
-.info-text {
+.footer__title,
+.footer__text{
     color: var(--ColorLetras);
 }
 
-.Ftitle {
+.footer__title {
     margin-top: 8px;
     font-size: 26px;
     font-weight: 500;
 }
 
-.footer-Links {
+.footer__link{
     list-style: none;
 }
 
-.text--conditions{
+.footer__text--conditions{
     width: 100%;
 }
-.LinksContainer a {
+.footer__links-container a {
     color: var(--ColorLetras);
     text-decoration: none;
     line-height: 30px;
 }
 
-.LinksContainer {
+.footer__links-container {
     padding: 0;
 }
-
 body {
     margin: 0 auto;
 }
+@media (max-width: 992px) {
+    .nav-wrapper .sidenav-trigger {
+        left: 10px;
+        right: auto;
+        position: absolute;
+    }
 
+    .nav-wrapper .brand-logo {
+        right: -75px;
+        left: auto;
+        position: absolute;
+    }
+
+}
 @media (min-width:990px) {
 
     .link {
@@ -231,104 +214,28 @@ body {
         font-size: 19px;
     }
 
-    .nav-icon_arrow {
-        display: none;
-    }
-
-    .link:hover {
-        transform: scale(1.1);
-        transition: all ease-in-out 250ms;
-        color: rgb(10, 0, 0);
-        text-decoration: underline;
-    }
-
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .navLinks {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        right: 0;
-        top: -1.5%;
-        background-color: transparent;
-        width: 60%;
-        height: auto;
-        margin-top: 27px;
-        margin-right: 7px;
-        transition: none;
-    }
-
-    .list {
-        margin: 0 13px;
-    }
-
-    .Hamburger-menu {
-        display: none;
-    }
-
-    .Menu-Logo {
-        display: none;
-    }
-
     .navbar {
         width: 100%;
         display: flex;
         align-items: center;
     }
 
-    .nav-icon {
-        display: none;
-    }
-
-    .image_text {
-        font-size: 22px;
-        bottom: 75%;
-    }
-
-    .nav__logo {
-        width: 60px;
-        height: 60px;
-        padding-bottom: 10px;
-    }
-
-    .title--nav {
-        padding-top: 1%;
-        font-size: 23px;
-    }
-
-    .Icon--burger {
-        display: none;
-    }
-
-    .Icon-container {
-        display: none;
-    }
-    .page-footer__info{
+    .footer__info{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
-    .text--conditions{
-        width: 100%;
-    }
-    .footer-info--pages-links{
+    .footer__section--links{
         margin-left: 110px;
     }
-    .footer-info {
+    .footer__section{
         width: 330px;
         padding: 20px;
     }
-    .info-text--factory-descripcion{
+    .footer__text--description{
         margin-left: 0;
     }
-    .LinksContainer .footer-Links a:hover{
-        transform: scale(1.1);
-        transition: all ease-in-out 250ms;
-        color: rgb(10, 0, 0);
+    .footer__links-container .footer__link a:hover{
         text-decoration: underline;
     }
 }

@@ -12,43 +12,36 @@ html{
 * {
     font-family: "Montserrat", serif;
 }
+.BotonUP.hidden {
+    opacity: 0;
+    pointer-events: none; 
+}
+.BotonUP {
+    position: sticky;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    transition: opacity 0.5s ease;
+    margin-bottom: 30px;
+}
 .individualPerson{
     margin-right: 0px;
 }
 .ImportantInfo{
     margin-top: 0px;
 }
-.BSeeHistory{
+.BImage{
     border-radius: 1.5rem;
     width: 300px;
-    background-color: aliceblue;
-    color: black;
 }
 .historyContainer{
     background-color: #3277c5;
     color: aliceblue;
     width: 100%;
+    padding: 20px 0;
 }
 .generalInfo{
     margin-top: 40px;
-}
-.image-container {
-    width: 100%;
-}
-
-.Welcome {
-    width: 100%;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.041);
-    padding-bottom: 40px 25px;
-}
-
-.image-background {
-    width: 100%;
-    height: 55vh;
-    object-fit: cover;
-    position: relative;
-    filter: brightness(85%);
 }
 .ImgCard {
     height: 220px;
@@ -65,7 +58,6 @@ html{
 }
 
 
-
 @media (min-width:990px) {
     .equal-height {
         height: 130%;
@@ -73,7 +65,9 @@ html{
         flex-direction: column;
         justify-content: space-between;
     }
-
+    .BotonUP {
+        display: none;
+    }
     .equal-height:nth-of-type(3) {
         height: 100px;
     }
