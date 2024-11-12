@@ -4,9 +4,9 @@ function toggleDescription(id, event) {
     
 
     if (description.classList.contains('show')) {
-        event.currentTarget.innerHTML = '<i class="material-icons right">arrow_downward</i>Ver menos';
+        event.currentTarget.innerHTML = '<i class="material-icons right">remove</i>Ver menos';
     } else {
-        event.currentTarget.innerHTML = '<i class="material-icons right">arrow_upward</i>Ver más';
+        event.currentTarget.innerHTML = '<i class="material-icons right">add</i>Ver más';
     }
 
     event.currentTarget.blur();

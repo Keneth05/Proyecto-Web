@@ -69,15 +69,6 @@ main {
     margin-top: 30px;
 }
 
-.PageTitle {
-    display: flex;
-    flex-direction: row;
-
-
-}
-.Hola{
-    width: 100%;
-}
 .pageBtn {
     width: 100%;
     background-color: black;

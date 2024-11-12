@@ -5,31 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Metadata -->
+    <meta name="description"
+        content="servicios especializados para el mantenimiento y cuidado de bicicletas, descubre servicios como, lavado y ajuste, venta de repuestos y accesorios de calidad y mantenimiento preventivo y correctivo">
+    <meta name="keywords"
+        content="Zona Bike, servicios de bicicletas, mantenimiento preventivo, mantenimiento correctivo, lavado de bicicletas, ajuste de bicicletas, venta de repuestos, venta de accesorios para ciclismo, experiencia ">
+    <meta name="author" content="Keneth Ledezma Campos">
+
+    <!-- Enlaces y fuentes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <!-- Scripts y estilos -->
+    <link rel="icon" href="/SRC/Imagenes/Imagenes-Principal/Icono Pestaña.png" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="..//Docs/Estilos-Services.css">
+    <link rel="stylesheet" href="../Docs/Estilos-Services.css">
     <link rel="stylesheet" href="../Docs/Estilos-General.css">
-    <title>Servicios</title>
+    <title>Zona Bike</title>
 </head>
-<div class="MenuDarkView" id="MenuDarkView"></div>
 
 <body>
     <header>
         <section class="navbar-fixed">
             <nav class="nav-background">
-                <header  class="nav-wrapper Header">
-                    <a href="../Paginas/ContactUs.html" class="brand-logo">
-                        <img src="../Imagenes/Imagenes-Principal/processed_image_no_background.png" alt="" class="logo">
-                        <span class="logo-text">Osos Bike Shop</span>
+                <div class="nav-wrapper Header">
+                    <a href="../Paginas/ContactUs.html" class="brand-logo LogoContainer">
+                        <img src="../Imagenes/Imagenes-Principal/definitivologo.png" alt="Logo de la pempresa"
+                            class="logo">
                     </a>
                     <a href="#" data-target="mobile-menu" class="sidenav-trigger right">
                         <i class="material-icons">menu</i>
@@ -41,7 +46,7 @@
                         <li><a href="/SRC/Paginas/ContactUs.html">Contáctanos</a></li>
                         <li><a href="/SRC/Paginas/Nosotros.html">Nosotros</a></li>
                     </ul>
-                </header>
+                </div>
             </nav>
         </section>
         <ul class="sidenav" id="mobile-menu">
@@ -66,14 +71,15 @@
                         class="material-icons white-text">people</i>
                     Nosotros</a></li>
             <li class="sidenav-footer">
-                <img src="/SRC/Imagenes/Imagenes-Principal/logo-vertical (1).png" alt="Logo Empresa" class="Menu-Logo">
+                <img src="/SRC/Imagenes/Imagenes-Principal/sidenavlogo.png" alt="Logo Empresa" class="Menu-Logo">
             </li>
         </ul>
     </header>
 
     <main>
         <section class="image-container valign-wrapper">
-            <img class="image-background" src="..//Imagenes/Imagenes-Servicios/IMagenServices.jpg" alt="">
+            <img class="image-background" src="..//Imagenes/Imagenes-Servicios/IMagenServices.jpg"
+                alt="Bicicleta color gris con negro y blanco, con fondo de rocas grandes">
             <header class="row Welcome">
                 <div class="col s12">
                     <h2 class="white-text slogan">Tu Bicicleta en las Mejores Manos</h2>
@@ -93,12 +99,12 @@
 
         </section>
 
-        <section  class="container ExperienceContainer">
+        <section class="container ExperienceContainer">
             <div class="row">
                 <h5 id="NumbersTitle">Nuestra Experiencia en Numeros</h5>
                 <p>Más de una década brindando servicio profesional y soluciones especializadas para ciclistas</p>
 
-                <article  class="col s12 m6 l4">
+                <article class="col s12 m6 l4">
                     <div class="card white card-custom">
                         <div class="card-content">
                             <div class="Icon" aria-hidden="true">
@@ -110,7 +116,7 @@
                         </div>
                     </div>
                 </article>
-                
+
                 <article class="col s12 m6 l4">
                     <div class="card white card-custom">
                         <div class="card-content">
@@ -137,26 +143,26 @@
                     </div>
                 </article>
             </div>
-        </section >
+        </section>
 
         <section class="container">
             <div class="row servicesContainer">
                 <h5 id="ServiceTitle">Nuestros Servicios</h5>
                 <article class="col s12 m6 l4">
                     <div class="card hoverable">
-                        <div class="card-image">
+                        <figure class="card-image ServiceIMage">
                             <img class="ImgCard" src="/SRC/Imagenes/Imagenes-Servicios/VentaRepuestos.jpg"
-                                alt="Venta Repuestos">
-                            <a href="#" class="halfway-fab btn-floating black">
+                                alt="Imagen de muchos repuestos de bicicletas con fondo blanco">
+                            <a href="#" class="halfway-fab btn-floating black FloatingIcon">
                                 <i class="material-icons green-text">paid</i>
                             </a>
 
-                            <div class="description-content" id="VentaRepuestos">
+                            <figcaption class="description-content" id="VentaRepuestos">
                                 <p>Amplia variedad de accesorios para personalizar y mejorar tu bicicleta.</p>
-                            </div>
-                        </div>
+                            </figcaption>
+                        </figure>
                         <div class="card-content TitleContent">
-                            <h6 class="card-title" style="font-size: 20px;">Venta de Repuestos</h6>
+                            <h3 class="card-title serviceName">Venta de Repuestos</h3>
                         </div>
                         <section class="card-action characteristicsContainer">
                             <ul>
@@ -169,7 +175,7 @@
 
                                 <button class="btn description-btn"
                                     onclick="toggleDescription('VentaRepuestos', event)">
-                                    <i class="material-icons right">arrow_upward</i>Ver más
+                                    <i class="material-icons right">add</i>Ver más
                                 </button>
                             </div>
                         </section>
@@ -178,18 +184,18 @@
 
                 <article class="col s12 m6 l4">
                     <div class="card hoverable">
-                        <div class="card-image">
+                        <figure class="card-image ServiceIMage">
                             <img class="ImgCard" src="/SRC/Imagenes/Imagenes-Servicios/VentaAccesorios.jpg"
-                                alt="Venta Accesorios">
-                            <a href="" class="halfway-fab btn-floating black ">
+                                alt="Imagen de muchos accesorios como guantes, casco, lentes y mas con fondo blanco">
+                            <a href="" class="halfway-fab btn-floating black FloatingIcon">
                                 <i class="material-icons ">shopping_bag</i>
                             </a>
-                            <div class="description-content" id="VentaAccesorios">
+                            <figcaption class="description-content" id="VentaAccesorios">
                                 <p>Amplia variedad de accesorios para personalizar y mejorar tu bicicleta.</p>
-                            </div>
-                        </div>
+                            </figcaption>
+                        </figure>
                         <div class="card-content TitleContent">
-                            <h6 class="card-title" style="font-size: 20px;">Venta de Accesorios</h6>
+                            <h3 class="card-title serviceName">Venta de Accesorios</h3>
                         </div>
                         <section class="card-action characteristicsContainer">
                             <ul>
@@ -201,7 +207,7 @@
                             <div class="ButtomViewMore">
                                 <button class="btn description-btn"
                                     onclick="toggleDescription('VentaAccesorios', event)">
-                                    <i class="material-icons right">arrow_upward</i>Ver más
+                                    <i class="material-icons right">add</i>Ver más
                                 </button>
                             </div>
                         </section>
@@ -210,19 +216,19 @@
 
                 <article class="col s12 m6 l4">
                     <div class="card hoverable">
-                        <div class="card-image">
+                        <figure class="card-image ServiceIMage">
                             <img class="ImgCard" src="/SRC/Imagenes/Imagenes-Servicios/LavadoyAjuste.jpg"
-                                alt="Lavado y Ajuste">
-                            <a href="" class="halfway-fab btn-floating black ">
+                                alt="Persona de montando una maquinilla de cambios en una bicicleta">
+                            <a href="" class="halfway-fab btn-floating black FloatingIcon">
                                 <i class="material-icons blue-text ">water_drop</i>
                             </a>
                             <div class="description-content" id="Lavado">
                                 <p>Servicio completo de limpieza y ajuste para mantener tu bicicleta impecable.</p>
                             </div>
-                        </div>
-                        <div class="card-content TitleContent">
-                            <h6 class="card-title" style="font-size: 20px;">Lavado y Ajuste</h6>
-                        </div>
+                        </figure>
+                        <figcaption class="card-content TitleContent">
+                            <h3 class="card-title serviceName">Lavado y Ajuste</h3>
+                        </figcaption>
                         <section class="card-action characteristicsContainer">
                             <ul>
                                 <li>Limpieza profunda</li>
@@ -232,7 +238,7 @@
                             </ul>
                             <div class="ButtomViewMore">
                                 <button class="btn description-btn" onclick="toggleDescription('Lavado', event)">
-                                    <i class="material-icons right">arrow_upward</i>Ver más
+                                    <i class="material-icons right">add</i>Ver más
                                 </button>
                             </div>
                         </section>
@@ -241,19 +247,19 @@
 
                 <article class="col s12 m6 l6">
                     <div class="card hoverable">
-                        <div class="card-image">
+                        <figure class="card-image ServiceIMage">
                             <img class="ImgCard" src="/SRC/Imagenes/Imagenes-Servicios/Mantenimiento-correctivo.png"
-                                alt="Mantenimiento Correctivo">
-                            <a href="" class="halfway-fab btn-floating black ">
+                                alt="Persona arreglando algo en una caja de luz">
+                            <a href="" class="halfway-fab btn-floating black FloatingIcon">
                                 <i class="material-icons grey-text ">build</i>
                             </a>
-                            <div class="description-content" id="Correctivo">
+                            <figcaption class="description-content" id="Correctivo">
                                 <p>Mantén tu bicicleta en óptimas condiciones con nuestro servicio de mantenimiento
                                     correctivo.</p>
-                            </div>
-                        </div>
+                            </figcaption>
+                        </figure>
                         <div class="card-content TitleContent">
-                            <h6 class="card-title" style="font-size: 20px;">Mantenimiento Correctivo</h6>
+                            <h3 class="card-title serviceName">Mantenimiento Correctivo</h3>
                         </div>
                         <section class="card-action characteristicsContainer">
                             <ul>
@@ -264,7 +270,7 @@
                             </ul>
                             <div class="ButtomViewMore">
                                 <button class="btn description-btn" onclick="toggleDescription('Correctivo', event)">
-                                    <i class="material-icons right">arrow_upward</i>Ver más
+                                    <i class="material-icons right">add</i>Ver más
                                 </button>
                             </div>
                         </section>
@@ -273,19 +279,19 @@
 
                 <article class="col s12 m6 l6">
                     <div class="card hoverable">
-                        <div class="card-image">
+                        <figure class="card-image ServiceIMage">
                             <img class="ImgCard" src="/SRC/Imagenes/Imagenes-Servicios/mantenimiento-predictivo.jpg"
-                                alt="Mantenimiento Preventivo">
-                            <a href="" class="halfway-fab btn-floating black ">
+                                alt="Persona revisando una lista de cosas y tachandolas">
+                            <a href="" class="halfway-fab btn-floating black FloatingIcon">
                                 <i class="material-icons">check_circle</i>
                             </a>
-                            <div class="description-content" id="Preventivo">
+                            <figcaption class="description-content" id="Preventivo">
                                 <p>Mantén tu bicicleta en óptimas condiciones con nuestro servicio de mantenimiento
                                     preventivo regular.</p>
-                            </div>
-                        </div>
+                            </figcaption>
+                        </figure>
                         <div class="card-content TitleContent">
-                            <h6 class="card-title" style="font-size: 20px;">Mantenimiento Preventivo</h6>
+                            <h3 class="card-title serviceName">Mantenimiento Preventivo</h3>
                         </div>
                         <section class="card-action characteristicsContainer">
                             <ul>
@@ -296,7 +302,7 @@
                             </ul>
                             <div class="ButtomViewMore">
                                 <button class="btn description-btn" onclick="toggleDescription('Preventivo', event)">
-                                    <i class="material-icons right">arrow_upward</i>Ver más
+                                    <i class="material-icons right">add</i>Ver más
                                 </button>
                             </div>
                         </section>
@@ -313,7 +319,7 @@
                     <img src="/SRC/Imagenes/Imagenes-Principal/bicicleta.png" alt="Icono de persona en bicicleta"
                         class="footer__icon">
                     <div class="footer__factory-name">
-                        <h3 class="footer__title footer__title--name">Osos Bike Shop</h3>
+                        <h3 class="footer__title footer__title--name">Zona Bike</h3>
                     </div>
                 </div>
 
@@ -323,17 +329,18 @@
                 </div>
 
                 <div class="footer__social-media">
-                    <a href="https://www.facebook.com/share/ZbFzsdYR76BZMV1v/?mibextid=kFxxJD">
+                    <a href="https://www.facebook.com/search/top?q=instituto%20nacional%20de%20aprendizaje%20(ina)">
                         <img class="footer__icon footer__icon--facebook"
-                            src="/SRC/Imagenes/Imagenes-Footer/facebook (3).png" alt="Logo de Facebook">
+                            src="/SRC/Imagenes/Imagenes-Footer/square-facebook-brands-solid.svg" alt="Logo de Facebook">
                     </a>
-                    <a href="https://www.instagram.com/ososbikeshop?igsh=MTM0dXVjdTFoNnBuNA%3D%3D&utm_source=qr">
+                    <a href="https://www.instagram.com/ina_costarica/">
                         <img class="footer__icon footer__icon--instagram"
-                            src="/SRC/Imagenes/Imagenes-Footer/logotipo-de-instagram (1).png" alt="Logo de Instagram">
+                            src="/SRC/Imagenes/Imagenes-Footer/square-instagram-brands-solid.svg" alt="Logo de
+                            Instagram">
                     </a>
-                    <a href="mailto:Ososbikes@gmail.com">
-                        <img class="footer__icon footer__icon--gmail" src="/SRC/Imagenes/Imagenes-Footer/gmail (2).png"
-                            alt="Logo de Gmail">
+                    <a href="mailto:Keneth05lc@gmail.com">
+                        <img class="footer__icon footer__icon--gmail"
+                            src="/SRC/Imagenes/Imagenes-Footer/envelope-solid.svg" alt="Logo de Gmail">
                     </a>
                 </div>
             </section>
@@ -353,27 +360,29 @@
                 <h3 class="footer__title footer__title--contact">Contacto</h3>
                 <address>
                     <div class="footer__contact-item">
-                        <img src="/SRC/Imagenes/Imagenes-Footer/marcador-de-posicion (1).png" alt="Ubicación"
+                        <img src="/SRC/Imagenes/Imagenes-Footer/location-dot-solid.svg" alt="Ubicación"
                             class="footer__icon">
-                        <p class="footer__text">50 m este de CONCREPAL, Buenos Aires, Palmares.</p>
+                        <a href="https://www.google.com/maps/dir//Osos+Bikeshop+50m+este+de+CONCREPAL+Provincia+de+Alajuela,+Palmares/@10.0741775,-84.4287458,1401m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x8fa04585853e4c83:0x2e14b18014ba5478!2m2!1d-84.4287029!2d10.0742061?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"
+                            class="
+                            footer__text">50 m este de CONCREPAL, Buenos Aires, Palmares.</a>
                     </div>
 
                     <div class="footer__contact-item">
-                        <img src="/SRC/Imagenes/Imagenes-Footer/telefono (2).png" alt="Teléfono" class="footer__icon">
-                        <p class="footer__text">8457-2016</p>
+                        <img src="/SRC/Imagenes/Imagenes-Footer/phone-solid.svg" alt="Teléfono" class="footer__icon">
+                        <p class="footer__text">8329-6163</p>
                     </div>
 
                     <div class="footer__contact-item">
-                        <img src="/SRC/Imagenes/Imagenes-Footer/gmail (3).png" alt="Correo electrónico"
+                        <img src="/SRC/Imagenes/Imagenes-Footer/envelope-solid.svg" alt="Correo electrónico"
                             class="footer__icon">
-                        <a class="footer__text" href="mailto:Ososbikes@gmail.com">Ososbikes@gmail.com</a>
+                        <a class="footer__text" href="mailto:keneth05lc@gmail.com">ZonaBike@gmail.com</a>
                     </div>
                 </address>
             </section>
         </div>
         <hr>
         <div class="footer__conditions">
-            <p class="footer__text footer__text--conditions">2024 Osos Bike Shop todos los derechos reservados</p>
+            <p class="footer__text footer__text--conditions">2024 Zona Bike Todos los derechos reservados</p>
         </div>
     </footer>
     <script src="/SRC/Docs/Servicios.js"></script>

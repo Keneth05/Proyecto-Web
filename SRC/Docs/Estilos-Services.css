@@ -9,6 +9,16 @@ html{
     scroll-behavior: smooth;
     background-color: #f5f5f5;
 }
+.FloatingIcon{
+    z-index: 100;
+}
+.ServiceIMage{
+    margin: 0px;
+}
+.serviceName{
+    font-size: 20px !important;
+    margin: 10px !important;
+}
 .ExperienceContainer{
     margin-top: 40px;
 }
@@ -27,7 +37,7 @@ html{
     margin: 0 auto;
 }
 .servicesContainer{
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .ImgCard {
@@ -35,7 +45,7 @@ html{
     object-fit:cover;
 }
 .TitleContent{
-    padding: 7px 24px !important;
+    padding: 7px !important;
 }
 .characteristicsContainer{
     padding: 5px 24px !important;
@@ -65,8 +75,6 @@ html{
     display: none;
     position: absolute;
     top: 0;
-
-
     bottom: 0;
     background: rgba(0, 0, 0, 0.6);
     color: #ffffff;

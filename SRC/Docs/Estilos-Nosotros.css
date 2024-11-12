@@ -8,9 +8,15 @@ main {
 }
 html{
     scroll-behavior: smooth;
+    background-color: #f5f5f5;
 }
 * {
     font-family: "Montserrat", serif;
+}
+
+.schedule-card{
+    background-color: #436b8b;
+    border: 1px solid #e0f0f5 ;
 }
 .BotonUP.hidden {
     opacity: 0;
@@ -27,15 +33,18 @@ html{
 .individualPerson{
     margin-right: 0px;
 }
-.ImportantInfo{
-    margin-top: 0px;
+.info-title{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: 450;
 }
 .BImage{
     border-radius: 1.5rem;
     width: 300px;
 }
-.historyContainer{
-    background-color: #3277c5;
+.General{
+    background-color: #004c70;
     color: aliceblue;
     width: 100%;
     padding: 20px 0;
@@ -53,7 +62,7 @@ html{
     height: 150px;
 }
 
-.AboutInfo{
+.info-text{
     text-align: justify;
 }
 
